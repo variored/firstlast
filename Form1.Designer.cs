@@ -240,6 +240,7 @@
             // 
             // buttonGiveUp1
             // 
+            this.buttonGiveUp1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.buttonGiveUp1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonGiveUp1.FlatAppearance.BorderSize = 0;
             this.buttonGiveUp1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
@@ -252,7 +253,7 @@
             this.buttonGiveUp1.Size = new System.Drawing.Size(400, 23);
             this.buttonGiveUp1.TabIndex = 2;
             this.buttonGiveUp1.Text = "сдаться";
-            this.buttonGiveUp1.UseVisualStyleBackColor = true;
+            this.buttonGiveUp1.UseVisualStyleBackColor = false;
             this.buttonGiveUp1.Click += new System.EventHandler(this.buttonGiveUp1_Click);
             // 
             // labelIWalk1
@@ -354,6 +355,7 @@
             // 
             // buttonGiveUp2
             // 
+            this.buttonGiveUp2.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.buttonGiveUp2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonGiveUp2.FlatAppearance.BorderSize = 0;
             this.buttonGiveUp2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
@@ -366,14 +368,14 @@
             this.buttonGiveUp2.Size = new System.Drawing.Size(400, 23);
             this.buttonGiveUp2.TabIndex = 3;
             this.buttonGiveUp2.Text = "сдаться";
-            this.buttonGiveUp2.UseVisualStyleBackColor = true;
+            this.buttonGiveUp2.UseVisualStyleBackColor = false;
             this.buttonGiveUp2.Click += new System.EventHandler(this.buttonGiveUp2_Click);
             // 
             // labelIWalk2
             // 
             this.labelIWalk2.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelIWalk2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelIWalk2.ForeColor = System.Drawing.Color.GreenYellow;
+            this.labelIWalk2.ForeColor = System.Drawing.Color.Transparent;
             this.labelIWalk2.Location = new System.Drawing.Point(0, 30);
             this.labelIWalk2.Name = "labelIWalk2";
             this.labelIWalk2.Size = new System.Drawing.Size(400, 30);
