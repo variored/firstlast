@@ -9,7 +9,7 @@ namespace tusur_informatika_kursovaya
 
         private Game game = new Game();
         private List<String> allWords = new List<String>();
-        private int gameType = 0; //изменить на получение из формы 3
+        private int gameType = 1; 
         private Form3 form3 = new Form3();
 
         public Form1()
@@ -152,25 +152,29 @@ namespace tusur_informatika_kursovaya
         private void StartNewGame()
         {
             game.StartNewGame();
-            game.SetGameType(form3.GetGameType());
+            game.SetGameType(gameType);
             SetWindowTitle();
             UpdateWindowInfo();
 
         }
         private void SetWindowTitle()
         {
-            if (form3.GetGameType() == 1)
+            if (gameType == 1)
             {
                 this.Text = "FirstLast: Города";
             }
-            if (form3.GetGameType() == 2)
+            if (gameType == 2)
             {
                 this.Text = "FirstLast: Имена";
             }
-            if (form3.GetGameType() == 3)
+            if (gameType  == 3)
             {
                 this.Text = "FirstLast: Животные";
             }
+        }
+        public void SetNewGameType(int _newGameType)
+        {
+            gameType = _newGameType;
         }
     }
 }

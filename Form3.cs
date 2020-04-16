@@ -22,5 +22,16 @@ namespace tusur_informatika_kursovaya
         {
             return gameType;
         }
+
+        private void buttonOk_Click(object sender, EventArgs e)
+        {
+            Form1 parentForm = (this.Parent as Form1);
+            parentForm.SetNewGameType(3);
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
