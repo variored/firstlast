@@ -104,10 +104,18 @@ namespace tusur_informatika_kursovaya
                 UpdateCounters();
                 UpdateIWalkLabel();
                 SetAllWordsOnScreen();
+                AddFirsLetterOfNextWord();
             }
             else
             {
                 ShowWhoLoser();
+            }
+        }
+        private void AddFirsLetterOfNextWord()
+        {
+            if (lastWord != "")
+            {
+                textBoxNewWord.Text = lastWord[lastWord.Length - 1].ToString().ToUpper();
             }
         }
         private void ShowWhoLoser()
