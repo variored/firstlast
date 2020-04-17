@@ -214,6 +214,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.BackgroundImage = global::tusur_informatika_kursovaya.Resource.userbg;
             this.panel4.Controls.Add(this.panel22);
             this.panel4.Controls.Add(this.panel13);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
@@ -320,6 +321,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Transparent;
+            this.panel5.BackgroundImage = global::tusur_informatika_kursovaya.Resource.user2bg;
             this.panel5.Controls.Add(this.panel15);
             this.panel5.Controls.Add(this.panel17);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
