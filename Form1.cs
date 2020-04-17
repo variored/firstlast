@@ -10,7 +10,6 @@ namespace tusur_informatika_kursovaya
         private Game game = new Game();
         private List<String> allWords = new List<String>();
         private int gameType = 1; 
-        private Form3 form3 = new Form3();
 
         public Form1()
         {
@@ -43,12 +42,6 @@ namespace tusur_informatika_kursovaya
         {
             /*form2.Show();*/
         }
-
-        private void buttonSettings_Click(object sender, EventArgs e)
-        {
-            ShowSettings();
-        }
-
         private void buttonEnterNewWord_Click(object sender, EventArgs e)
         {
             
@@ -144,10 +137,6 @@ namespace tusur_informatika_kursovaya
         private void ShowWordExists(String _word)
         {
             MessageBox.Show("wordExists: " + _word, "word exists: " + _word);
-        }
-        private void ShowSettings()
-        {
-            form3.Show();
         }
         private void StartNewGame()
         {

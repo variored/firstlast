@@ -32,7 +32,6 @@
             this.buttonAboutMe = new System.Windows.Forms.Button();
             this.buttonHelp = new System.Windows.Forms.Button();
             this.buttonStartNewGame = new System.Windows.Forms.Button();
-            this.buttonSettings = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -82,7 +81,6 @@
             this.panel1.Controls.Add(this.buttonAboutMe);
             this.panel1.Controls.Add(this.buttonHelp);
             this.panel1.Controls.Add(this.buttonStartNewGame);
-            this.panel1.Controls.Add(this.buttonSettings);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 417);
             this.panel1.Name = "panel1";
@@ -121,27 +119,13 @@
             this.buttonStartNewGame.FlatAppearance.BorderSize = 0;
             this.buttonStartNewGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonStartNewGame.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.buttonStartNewGame.Location = new System.Drawing.Point(75, 0);
+            this.buttonStartNewGame.Location = new System.Drawing.Point(0, 0);
             this.buttonStartNewGame.Name = "buttonStartNewGame";
             this.buttonStartNewGame.Size = new System.Drawing.Size(75, 34);
             this.buttonStartNewGame.TabIndex = 3;
             this.buttonStartNewGame.Text = "new game";
             this.buttonStartNewGame.UseVisualStyleBackColor = true;
             this.buttonStartNewGame.Click += new System.EventHandler(this.buttonStartNewGame_Click);
-            // 
-            // buttonSettings
-            // 
-            this.buttonSettings.Dock = System.Windows.Forms.DockStyle.Left;
-            this.buttonSettings.FlatAppearance.BorderSize = 0;
-            this.buttonSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSettings.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.buttonSettings.Location = new System.Drawing.Point(0, 0);
-            this.buttonSettings.Name = "buttonSettings";
-            this.buttonSettings.Size = new System.Drawing.Size(75, 34);
-            this.buttonSettings.TabIndex = 0;
-            this.buttonSettings.Text = "settings";
-            this.buttonSettings.UseVisualStyleBackColor = true;
-            this.buttonSettings.Click += new System.EventHandler(this.buttonSettings_Click);
             // 
             // panel2
             // 
@@ -217,7 +201,6 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.BackgroundImage = global::tusur_informatika_kursovaya.Resource.userbg;
             this.panel4.Controls.Add(this.panel22);
             this.panel4.Controls.Add(this.panel13);
             this.panel4.Controls.Add(this.panel8);
@@ -332,7 +315,6 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Transparent;
-            this.panel5.BackgroundImage = global::tusur_informatika_kursovaya.Resource.user2bg;
             this.panel5.Controls.Add(this.panel15);
             this.panel5.Controls.Add(this.panel17);
             this.panel5.Controls.Add(this.panel21);
@@ -508,7 +490,6 @@
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Button buttonEnterNewWord;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button buttonSettings;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel14;
