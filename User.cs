@@ -55,23 +55,37 @@ namespace tusur_informatika_kursovaya
         }
         private void CreateWords()
         {
-            if (gameType == 0)
+            if (gameType == 1)
             {
                 words = new Cities();
             }
-            else if (gameType == 1)
+            else if (gameType == 2)
             {
                 words = new Animals();
             }
-            else if (gameType == 2)
+            else if (gameType == 3)
             {
                 words = new Names();
             }
         }
 
-        internal bool IsRealWord(string _word)
+        public bool IsRealWord(string _word)
         {
-            return words.Exists(_word);
+            string firstUpper = _word;
+            for (int i = 0; i < _word.Length; i++)
+            {
+                if (i == 0)
+                {
+                    firstUpper = firstUpper.ToCharArray()[0].ToString().ToUpper();
+                }
+                else
+                {
+                    firstUpper += _word.ToCharArray()[i].ToString();
+                }
+            }
+            
+
+            return words.Exists(firstUpper);
         }
     }
 }

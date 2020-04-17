@@ -8,7 +8,7 @@ namespace tusur_informatika_kursovaya
     {
         public Animals()
         {
-
+            words.Add("птица");
         }
     }
 }
