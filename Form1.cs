@@ -8,7 +8,7 @@ namespace tusur_informatika_kursovaya
     {
 
         private Game game = new Game();
-        private List<String> allWords = new List<String>();
+        private String lastWord = "";
         private int gameType = 1; 
 
         public Form1()
@@ -25,19 +25,16 @@ namespace tusur_informatika_kursovaya
             StartNewGame();
             
         }
-
         private void buttonGiveUp2_Click(object sender, EventArgs e)
         {
             game.SetGiveUp(2);
             UpdateWindowInfo();
             StartNewGame();
         }
-
         private void buttonHelp_Click(object sender, EventArgs e)
         {
             /*Help();*/
         }
-
         private void buttonAboutMe_Click(object sender, EventArgs e)
         {
             /*form2.Show();*/
@@ -51,15 +48,25 @@ namespace tusur_informatika_kursovaya
             }
             else
             {
-                if (!game.AddWord(textBoxNewWord.Text.ToString().ToLower()))
+                if (!game.ViaRules(textBoxNewWord.Text.ToString().ToLower()))
                 {
-                    ShowWordExists(textBoxNewWord.Text.ToString().ToLower());
+                    ShowIncorrectLetter();
+                }
+                else
+                {
+                    if (!game.AddWord(textBoxNewWord.Text.ToString().ToLower()))
+                    {
+                        ShowWordExists(textBoxNewWord.Text.ToString().ToLower());
+                    }
                 }
             }
             
             UpdateWindowInfo();
         }
-
+        private void ShowIncorrectLetter()
+        {
+            MessageBox.Show("last letter must be: " + lastWord[lastWord.Length - 1].ToString().ToUpper(), "ERROR");
+        }
         private void buttonStartNewGame_Click(object sender, EventArgs e)
         {
             StartNewGame();
@@ -69,6 +76,11 @@ namespace tusur_informatika_kursovaya
             textBoxAllWords.Text = "";
             
             String[] allWords = game.GetAllWords();
+
+            if (allWords.Length != 0)
+            {
+                lastWord = allWords[allWords.Length - 1];
+            }
 
             for (int i = 0; i <= allWords.Length-1; i++)
             {
@@ -84,8 +96,7 @@ namespace tusur_informatika_kursovaya
         }
         private void UpdateWindowInfo()
         {
-            //move textbox
-
+            
             textBoxNewWord.Text = "";
 
             if (game.CheckLoser() == 0)
@@ -146,7 +157,7 @@ namespace tusur_informatika_kursovaya
             UpdateWindowInfo();
 
         }
-        public void SetNewGameType(int _newGameType)
+        private void SetNewGameType(int _newGameType)
         {
             gameType = _newGameType;
         }
@@ -175,7 +186,6 @@ namespace tusur_informatika_kursovaya
                 buttonGameTypeNames.BackColor = System.Drawing.Color.WhiteSmoke;
             }
         }
-
         private void buttonGameTypeNames_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("начать новую игру \"Имена\"?", "начать новую игру", MessageBoxButtons.YesNo);
@@ -185,7 +195,6 @@ namespace tusur_informatika_kursovaya
                 StartNewGame();
             }
         }
-
         private void buttonGameTypeAnimals_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("начать новую игру \"Животные\"?", "начать новую игру", MessageBoxButtons.YesNo);
@@ -195,7 +204,6 @@ namespace tusur_informatika_kursovaya
                 StartNewGame();
             }
         }
-
         private void buttonGameTypeCities_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("начать новую игру \"Города\"?", "начать новую игру", MessageBoxButtons.YesNo);

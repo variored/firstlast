@@ -62,6 +62,20 @@ namespace tusur_informatika_kursovaya
         {
             users.SetGameType(_newGameType);
         }
+
+        public bool ViaRules(string _word)
+        {
+            if (allWords.Count == 0)
+            {
+                return true;
+            }
+            if (allWords[allWords.Count-1][allWords[allWords.Count - 1].Length-1] == _word[0])
+            {
+                return true;
+            }
+            return false;
+        }
+
         public void SetGiveUp(int _Id)
         {
             users.SetGiveUp(_Id);
