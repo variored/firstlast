@@ -9,7 +9,7 @@ namespace tusur_informatika_kursovaya
 
         private Game game = new Game();
         private String lastWord = "";
-        private int gameType = 1; 
+        private int gameType = 1;
 
         public Form1()
         {
@@ -33,7 +33,8 @@ namespace tusur_informatika_kursovaya
         }
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            /*Help();*/
+            Form2 form2 = new Form2();
+            form2.Show();
         }
         private void buttonAboutMe_Click(object sender, EventArgs e)
         {
@@ -221,5 +222,6 @@ namespace tusur_informatika_kursovaya
                 StartNewGame();
             }
         }
+
     }
 }
