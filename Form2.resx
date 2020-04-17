@@ -117,4 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Правила очень простые - первый игрок называет слово по заданной теме, второй игрок называет слово, первая буква которого совпадает с последней буквой слова, названного первым игроком. Если названо слово, заканчивающееся на Й, Ы, Ъ, Ь, следущему игроку нужно придумать слово на предпоследнюю букву. Слова в процессе одного кона игры не должны повторяться.
+</value>
+  </data>
 </root>
