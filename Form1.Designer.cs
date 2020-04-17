@@ -61,13 +61,13 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panelBottomColorGameTypeNames = new System.Windows.Forms.Panel();
-            this.labelGameTypeNames = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.labelGameTypeCities = new System.Windows.Forms.Label();
             this.panelBottomColorGameTypeCities = new System.Windows.Forms.Panel();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.labelGameTypeAnimals = new System.Windows.Forms.Label();
             this.panelBottomColorGameTypeAnimals = new System.Windows.Forms.Panel();
+            this.buttonGameTypeCities = new System.Windows.Forms.Button();
+            this.buttonGameTypeAnimals = new System.Windows.Forms.Button();
+            this.buttonGameTypeNames = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel12.SuspendLayout();
@@ -459,7 +459,7 @@
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.labelGameTypeNames);
+            this.panel9.Controls.Add(this.buttonGameTypeNames);
             this.panel9.Controls.Add(this.panelBottomColorGameTypeNames);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel9.Location = new System.Drawing.Point(235, 0);
@@ -476,35 +476,15 @@
             this.panelBottomColorGameTypeNames.Size = new System.Drawing.Size(117, 3);
             this.panelBottomColorGameTypeNames.TabIndex = 0;
             // 
-            // labelGameTypeNames
-            // 
-            this.labelGameTypeNames.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelGameTypeNames.Location = new System.Drawing.Point(0, 0);
-            this.labelGameTypeNames.Name = "labelGameTypeNames";
-            this.labelGameTypeNames.Size = new System.Drawing.Size(117, 31);
-            this.labelGameTypeNames.TabIndex = 1;
-            this.labelGameTypeNames.Text = "инема";
-            this.labelGameTypeNames.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.labelGameTypeCities);
+            this.panel8.Controls.Add(this.buttonGameTypeCities);
             this.panel8.Controls.Add(this.panelBottomColorGameTypeCities);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel8.Location = new System.Drawing.Point(1, 0);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(117, 34);
             this.panel8.TabIndex = 7;
-            // 
-            // labelGameTypeCities
-            // 
-            this.labelGameTypeCities.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelGameTypeCities.Location = new System.Drawing.Point(0, 0);
-            this.labelGameTypeCities.Name = "labelGameTypeCities";
-            this.labelGameTypeCities.Size = new System.Drawing.Size(117, 31);
-            this.labelGameTypeCities.TabIndex = 1;
-            this.labelGameTypeCities.Text = "города";
-            this.labelGameTypeCities.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelBottomColorGameTypeCities
             // 
@@ -517,23 +497,13 @@
             // 
             // panel19
             // 
-            this.panel19.Controls.Add(this.labelGameTypeAnimals);
+            this.panel19.Controls.Add(this.buttonGameTypeAnimals);
             this.panel19.Controls.Add(this.panelBottomColorGameTypeAnimals);
             this.panel19.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel19.Location = new System.Drawing.Point(118, 0);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(117, 34);
             this.panel19.TabIndex = 7;
-            // 
-            // labelGameTypeAnimals
-            // 
-            this.labelGameTypeAnimals.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelGameTypeAnimals.Location = new System.Drawing.Point(0, 0);
-            this.labelGameTypeAnimals.Name = "labelGameTypeAnimals";
-            this.labelGameTypeAnimals.Size = new System.Drawing.Size(117, 31);
-            this.labelGameTypeAnimals.TabIndex = 1;
-            this.labelGameTypeAnimals.Text = "животные";
-            this.labelGameTypeAnimals.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelBottomColorGameTypeAnimals
             // 
@@ -543,6 +513,42 @@
             this.panelBottomColorGameTypeAnimals.Name = "panelBottomColorGameTypeAnimals";
             this.panelBottomColorGameTypeAnimals.Size = new System.Drawing.Size(117, 3);
             this.panelBottomColorGameTypeAnimals.TabIndex = 0;
+            // 
+            // buttonGameTypeCities
+            // 
+            this.buttonGameTypeCities.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonGameTypeCities.FlatAppearance.BorderSize = 0;
+            this.buttonGameTypeCities.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGameTypeCities.Location = new System.Drawing.Point(0, 0);
+            this.buttonGameTypeCities.Name = "buttonGameTypeCities";
+            this.buttonGameTypeCities.Size = new System.Drawing.Size(117, 31);
+            this.buttonGameTypeCities.TabIndex = 1;
+            this.buttonGameTypeCities.Text = "города";
+            this.buttonGameTypeCities.UseVisualStyleBackColor = true;
+            // 
+            // buttonGameTypeAnimals
+            // 
+            this.buttonGameTypeAnimals.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonGameTypeAnimals.FlatAppearance.BorderSize = 0;
+            this.buttonGameTypeAnimals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGameTypeAnimals.Location = new System.Drawing.Point(0, 0);
+            this.buttonGameTypeAnimals.Name = "buttonGameTypeAnimals";
+            this.buttonGameTypeAnimals.Size = new System.Drawing.Size(117, 31);
+            this.buttonGameTypeAnimals.TabIndex = 1;
+            this.buttonGameTypeAnimals.Text = "животные";
+            this.buttonGameTypeAnimals.UseVisualStyleBackColor = true;
+            // 
+            // buttonGameTypeNames
+            // 
+            this.buttonGameTypeNames.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonGameTypeNames.FlatAppearance.BorderSize = 0;
+            this.buttonGameTypeNames.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGameTypeNames.Location = new System.Drawing.Point(0, 0);
+            this.buttonGameTypeNames.Name = "buttonGameTypeNames";
+            this.buttonGameTypeNames.Size = new System.Drawing.Size(117, 31);
+            this.buttonGameTypeNames.TabIndex = 1;
+            this.buttonGameTypeNames.Text = "имена";
+            this.buttonGameTypeNames.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -614,15 +620,15 @@
         private System.Windows.Forms.Button buttonAboutMe;
         private System.Windows.Forms.Button buttonHelp;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label labelGameTypeNames;
         private System.Windows.Forms.Panel panelBottomColorGameTypeNames;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label labelGameTypeCities;
         private System.Windows.Forms.Panel panelBottomColorGameTypeCities;
         private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Label labelGameTypeAnimals;
         private System.Windows.Forms.Panel panelBottomColorGameTypeAnimals;
+        private System.Windows.Forms.Button buttonGameTypeCities;
+        private System.Windows.Forms.Button buttonGameTypeAnimals;
+        private System.Windows.Forms.Button buttonGameTypeNames;
     }
 }
 
