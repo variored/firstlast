@@ -47,7 +47,6 @@
             this.panel16 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.buttonGiveUp2 = new System.Windows.Forms.Button();
@@ -57,9 +56,18 @@
             this.panel18 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.panel21 = new System.Windows.Forms.Panel();
             this.panel3forallwordslbl = new System.Windows.Forms.Panel();
             this.textBoxAllWords = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panelBottomColorGameTypeNames = new System.Windows.Forms.Panel();
+            this.labelGameTypeNames = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.labelGameTypeCities = new System.Windows.Forms.Label();
+            this.panelBottomColorGameTypeCities = new System.Windows.Forms.Panel();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.labelGameTypeAnimals = new System.Windows.Forms.Label();
+            this.panelBottomColorGameTypeAnimals = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel12.SuspendLayout();
@@ -74,10 +82,15 @@
             this.panel17.SuspendLayout();
             this.panel18.SuspendLayout();
             this.panel3forallwordslbl.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel19.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.buttonAboutMe);
             this.panel1.Controls.Add(this.buttonHelp);
             this.panel1.Controls.Add(this.buttonStartNewGame);
@@ -203,7 +216,6 @@
             this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.Controls.Add(this.panel22);
             this.panel4.Controls.Add(this.panel13);
-            this.panel4.Controls.Add(this.panel8);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
@@ -305,19 +317,11 @@
             this.panel14.Size = new System.Drawing.Size(149, 127);
             this.panel14.TabIndex = 4;
             // 
-            // panel8
-            // 
-            this.panel8.Location = new System.Drawing.Point(217, 261);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(22, 28);
-            this.panel8.TabIndex = 1;
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.Controls.Add(this.panel15);
             this.panel5.Controls.Add(this.panel17);
-            this.panel5.Controls.Add(this.panel21);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel5.Location = new System.Drawing.Point(400, 0);
             this.panel5.Name = "panel5";
@@ -418,13 +422,6 @@
             this.panel20.Size = new System.Drawing.Size(147, 127);
             this.panel20.TabIndex = 4;
             // 
-            // panel21
-            // 
-            this.panel21.Location = new System.Drawing.Point(217, 261);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(22, 28);
-            this.panel21.TabIndex = 1;
-            // 
             // panel3forallwordslbl
             // 
             this.panel3forallwordslbl.AutoScroll = true;
@@ -446,6 +443,104 @@
             this.textBoxAllWords.Size = new System.Drawing.Size(736, 133);
             this.textBoxAllWords.TabIndex = 0;
             this.textBoxAllWords.Text = "label2";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Transparent;
+            this.panel7.Controls.Add(this.panel8);
+            this.panel7.Controls.Add(this.panel19);
+            this.panel7.Controls.Add(this.panel9);
+            this.panel7.Location = new System.Drawing.Point(218, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(352, 34);
+            this.panel7.TabIndex = 6;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.labelGameTypeNames);
+            this.panel9.Controls.Add(this.panelBottomColorGameTypeNames);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel9.Location = new System.Drawing.Point(235, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(117, 34);
+            this.panel9.TabIndex = 6;
+            // 
+            // panelBottomColorGameTypeNames
+            // 
+            this.panelBottomColorGameTypeNames.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panelBottomColorGameTypeNames.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelBottomColorGameTypeNames.Location = new System.Drawing.Point(0, 31);
+            this.panelBottomColorGameTypeNames.Name = "panelBottomColorGameTypeNames";
+            this.panelBottomColorGameTypeNames.Size = new System.Drawing.Size(117, 3);
+            this.panelBottomColorGameTypeNames.TabIndex = 0;
+            // 
+            // labelGameTypeNames
+            // 
+            this.labelGameTypeNames.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelGameTypeNames.Location = new System.Drawing.Point(0, 0);
+            this.labelGameTypeNames.Name = "labelGameTypeNames";
+            this.labelGameTypeNames.Size = new System.Drawing.Size(117, 31);
+            this.labelGameTypeNames.TabIndex = 1;
+            this.labelGameTypeNames.Text = "инема";
+            this.labelGameTypeNames.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.labelGameTypeCities);
+            this.panel8.Controls.Add(this.panelBottomColorGameTypeCities);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel8.Location = new System.Drawing.Point(1, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(117, 34);
+            this.panel8.TabIndex = 7;
+            // 
+            // labelGameTypeCities
+            // 
+            this.labelGameTypeCities.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelGameTypeCities.Location = new System.Drawing.Point(0, 0);
+            this.labelGameTypeCities.Name = "labelGameTypeCities";
+            this.labelGameTypeCities.Size = new System.Drawing.Size(117, 31);
+            this.labelGameTypeCities.TabIndex = 1;
+            this.labelGameTypeCities.Text = "города";
+            this.labelGameTypeCities.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelBottomColorGameTypeCities
+            // 
+            this.panelBottomColorGameTypeCities.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panelBottomColorGameTypeCities.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelBottomColorGameTypeCities.Location = new System.Drawing.Point(0, 31);
+            this.panelBottomColorGameTypeCities.Name = "panelBottomColorGameTypeCities";
+            this.panelBottomColorGameTypeCities.Size = new System.Drawing.Size(117, 3);
+            this.panelBottomColorGameTypeCities.TabIndex = 0;
+            // 
+            // panel19
+            // 
+            this.panel19.Controls.Add(this.labelGameTypeAnimals);
+            this.panel19.Controls.Add(this.panelBottomColorGameTypeAnimals);
+            this.panel19.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel19.Location = new System.Drawing.Point(118, 0);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(117, 34);
+            this.panel19.TabIndex = 7;
+            // 
+            // labelGameTypeAnimals
+            // 
+            this.labelGameTypeAnimals.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelGameTypeAnimals.Location = new System.Drawing.Point(0, 0);
+            this.labelGameTypeAnimals.Name = "labelGameTypeAnimals";
+            this.labelGameTypeAnimals.Size = new System.Drawing.Size(117, 31);
+            this.labelGameTypeAnimals.TabIndex = 1;
+            this.labelGameTypeAnimals.Text = "животные";
+            this.labelGameTypeAnimals.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelBottomColorGameTypeAnimals
+            // 
+            this.panelBottomColorGameTypeAnimals.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panelBottomColorGameTypeAnimals.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelBottomColorGameTypeAnimals.Location = new System.Drawing.Point(0, 31);
+            this.panelBottomColorGameTypeAnimals.Name = "panelBottomColorGameTypeAnimals";
+            this.panelBottomColorGameTypeAnimals.Size = new System.Drawing.Size(117, 3);
+            this.panelBottomColorGameTypeAnimals.TabIndex = 0;
             // 
             // Form1
             // 
@@ -476,6 +571,10 @@
             this.panel17.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
             this.panel3forallwordslbl.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel19.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -486,7 +585,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox textBoxNewWord;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Button buttonEnterNewWord;
         private System.Windows.Forms.Label label1;
@@ -509,11 +607,20 @@
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Button buttonGiveUp1;
         private System.Windows.Forms.Button buttonGiveUp2;
         private System.Windows.Forms.Button buttonAboutMe;
         private System.Windows.Forms.Button buttonHelp;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label labelGameTypeNames;
+        private System.Windows.Forms.Panel panelBottomColorGameTypeNames;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label labelGameTypeCities;
+        private System.Windows.Forms.Panel panelBottomColorGameTypeCities;
+        private System.Windows.Forms.Panel panel19;
+        private System.Windows.Forms.Label labelGameTypeAnimals;
+        private System.Windows.Forms.Panel panelBottomColorGameTypeAnimals;
     }
 }
 

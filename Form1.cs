@@ -142,28 +142,39 @@ namespace tusur_informatika_kursovaya
         {
             game.StartNewGame();
             game.SetGameType(gameType);
-            SetWindowTitle();
+            SetNewColorButtonGameType();
             UpdateWindowInfo();
 
-        }
-        private void SetWindowTitle()
-        {
-            if (gameType == 1)
-            {
-                this.Text = "FirstLast: Города";
-            }
-            if (gameType == 2)
-            {
-                this.Text = "FirstLast: Имена";
-            }
-            if (gameType  == 3)
-            {
-                this.Text = "FirstLast: Животные";
-            }
         }
         public void SetNewGameType(int _newGameType)
         {
             gameType = _newGameType;
+        }
+        private void SetNewColorButtonGameType()
+        {
+            panelBottomColorGameTypeCities.BackColor = System.Drawing.Color.Transparent;
+            panelBottomColorGameTypeAnimals.BackColor = System.Drawing.Color.Transparent;
+            panelBottomColorGameTypeNames.BackColor = System.Drawing.Color.Transparent;
+            labelGameTypeCities.BackColor = System.Drawing.Color.Transparent;
+            labelGameTypeAnimals.BackColor = System.Drawing.Color.Transparent;
+            labelGameTypeNames.BackColor = System.Drawing.Color.Transparent;
+
+            if (gameType == 1)
+            {
+                panelBottomColorGameTypeCities.BackColor = System.Drawing.Color.DodgerBlue;
+                labelGameTypeCities.BackColor = System.Drawing.Color.WhiteSmoke;
+            }
+            if (gameType == 2)
+            {
+                panelBottomColorGameTypeAnimals.BackColor = System.Drawing.Color.DodgerBlue;
+                labelGameTypeAnimals.BackColor = System.Drawing.Color.WhiteSmoke;
+            }
+            if (gameType == 3)
+            {
+                labelGameTypeAnimals.BackColor = System.Drawing.Color.DodgerBlue;
+                labelGameTypeNames.BackColor = System.Drawing.Color.WhiteSmoke;
+            }
+
         }
     }
 }
