@@ -28,7 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.buttonGameTypeCities = new System.Windows.Forms.Button();
+            this.panelBottomColorGameTypeCities = new System.Windows.Forms.Panel();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.buttonGameTypeAnimals = new System.Windows.Forms.Button();
+            this.panelBottomColorGameTypeAnimals = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.buttonGameTypeNames = new System.Windows.Forms.Button();
+            this.panelBottomColorGameTypeNames = new System.Windows.Forms.Panel();
             this.buttonAboutMe = new System.Windows.Forms.Button();
             this.buttonHelp = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -36,6 +47,8 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.textBoxNewWord = new System.Windows.Forms.TextBox();
             this.buttonEnterNewWord = new System.Windows.Forms.Button();
+            this.panel3forallwordslbl = new System.Windows.Forms.Panel();
+            this.textBoxAllWords = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel22 = new System.Windows.Forms.Panel();
@@ -55,22 +68,15 @@
             this.panel18 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.panel3forallwordslbl = new System.Windows.Forms.Panel();
-            this.textBoxAllWords = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panelBottomColorGameTypeNames = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panelBottomColorGameTypeCities = new System.Windows.Forms.Panel();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.panelBottomColorGameTypeAnimals = new System.Windows.Forms.Panel();
-            this.buttonGameTypeCities = new System.Windows.Forms.Button();
-            this.buttonGameTypeAnimals = new System.Windows.Forms.Button();
-            this.buttonGameTypeNames = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel19.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel3forallwordslbl.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel22.SuspendLayout();
@@ -80,11 +86,6 @@
             this.panel15.SuspendLayout();
             this.panel17.SuspendLayout();
             this.panel18.SuspendLayout();
-            this.panel3forallwordslbl.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel19.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -97,6 +98,113 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 34);
             this.panel1.TabIndex = 0;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Transparent;
+            this.panel7.Controls.Add(this.panel8);
+            this.panel7.Controls.Add(this.panel19);
+            this.panel7.Controls.Add(this.panel9);
+            this.panel7.Location = new System.Drawing.Point(218, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(352, 34);
+            this.panel7.TabIndex = 6;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.buttonGameTypeCities);
+            this.panel8.Controls.Add(this.panelBottomColorGameTypeCities);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel8.Location = new System.Drawing.Point(1, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(117, 34);
+            this.panel8.TabIndex = 7;
+            // 
+            // buttonGameTypeCities
+            // 
+            this.buttonGameTypeCities.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonGameTypeCities.FlatAppearance.BorderSize = 0;
+            this.buttonGameTypeCities.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGameTypeCities.Location = new System.Drawing.Point(0, 0);
+            this.buttonGameTypeCities.Name = "buttonGameTypeCities";
+            this.buttonGameTypeCities.Size = new System.Drawing.Size(117, 31);
+            this.buttonGameTypeCities.TabIndex = 1;
+            this.buttonGameTypeCities.Text = "города";
+            this.buttonGameTypeCities.UseVisualStyleBackColor = true;
+            this.buttonGameTypeCities.Click += new System.EventHandler(this.buttonGameTypeCities_Click);
+            // 
+            // panelBottomColorGameTypeCities
+            // 
+            this.panelBottomColorGameTypeCities.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panelBottomColorGameTypeCities.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelBottomColorGameTypeCities.Location = new System.Drawing.Point(0, 31);
+            this.panelBottomColorGameTypeCities.Name = "panelBottomColorGameTypeCities";
+            this.panelBottomColorGameTypeCities.Size = new System.Drawing.Size(117, 3);
+            this.panelBottomColorGameTypeCities.TabIndex = 0;
+            // 
+            // panel19
+            // 
+            this.panel19.Controls.Add(this.buttonGameTypeAnimals);
+            this.panel19.Controls.Add(this.panelBottomColorGameTypeAnimals);
+            this.panel19.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel19.Location = new System.Drawing.Point(118, 0);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(117, 34);
+            this.panel19.TabIndex = 7;
+            // 
+            // buttonGameTypeAnimals
+            // 
+            this.buttonGameTypeAnimals.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonGameTypeAnimals.FlatAppearance.BorderSize = 0;
+            this.buttonGameTypeAnimals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGameTypeAnimals.Location = new System.Drawing.Point(0, 0);
+            this.buttonGameTypeAnimals.Name = "buttonGameTypeAnimals";
+            this.buttonGameTypeAnimals.Size = new System.Drawing.Size(117, 31);
+            this.buttonGameTypeAnimals.TabIndex = 1;
+            this.buttonGameTypeAnimals.Text = "животные";
+            this.buttonGameTypeAnimals.UseVisualStyleBackColor = true;
+            this.buttonGameTypeAnimals.Click += new System.EventHandler(this.buttonGameTypeAnimals_Click);
+            // 
+            // panelBottomColorGameTypeAnimals
+            // 
+            this.panelBottomColorGameTypeAnimals.BackColor = System.Drawing.Color.DeepPink;
+            this.panelBottomColorGameTypeAnimals.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelBottomColorGameTypeAnimals.Location = new System.Drawing.Point(0, 31);
+            this.panelBottomColorGameTypeAnimals.Name = "panelBottomColorGameTypeAnimals";
+            this.panelBottomColorGameTypeAnimals.Size = new System.Drawing.Size(117, 3);
+            this.panelBottomColorGameTypeAnimals.TabIndex = 0;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.buttonGameTypeNames);
+            this.panel9.Controls.Add(this.panelBottomColorGameTypeNames);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel9.Location = new System.Drawing.Point(235, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(117, 34);
+            this.panel9.TabIndex = 6;
+            // 
+            // buttonGameTypeNames
+            // 
+            this.buttonGameTypeNames.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonGameTypeNames.FlatAppearance.BorderSize = 0;
+            this.buttonGameTypeNames.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGameTypeNames.Location = new System.Drawing.Point(0, 0);
+            this.buttonGameTypeNames.Name = "buttonGameTypeNames";
+            this.buttonGameTypeNames.Size = new System.Drawing.Size(117, 31);
+            this.buttonGameTypeNames.TabIndex = 1;
+            this.buttonGameTypeNames.Text = "имена";
+            this.buttonGameTypeNames.UseVisualStyleBackColor = true;
+            this.buttonGameTypeNames.Click += new System.EventHandler(this.buttonGameTypeNames_Click);
+            // 
+            // panelBottomColorGameTypeNames
+            // 
+            this.panelBottomColorGameTypeNames.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panelBottomColorGameTypeNames.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelBottomColorGameTypeNames.Location = new System.Drawing.Point(0, 31);
+            this.panelBottomColorGameTypeNames.Name = "panelBottomColorGameTypeNames";
+            this.panelBottomColorGameTypeNames.Size = new System.Drawing.Size(117, 3);
+            this.panelBottomColorGameTypeNames.TabIndex = 0;
             // 
             // buttonAboutMe
             // 
@@ -184,6 +292,28 @@
             this.buttonEnterNewWord.UseVisualStyleBackColor = false;
             this.buttonEnterNewWord.Click += new System.EventHandler(this.buttonEnterNewWord_Click);
             // 
+            // panel3forallwordslbl
+            // 
+            this.panel3forallwordslbl.AutoScroll = true;
+            this.panel3forallwordslbl.Controls.Add(this.textBoxAllWords);
+            this.panel3forallwordslbl.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3forallwordslbl.Location = new System.Drawing.Point(0, 281);
+            this.panel3forallwordslbl.Margin = new System.Windows.Forms.Padding(30, 3, 30, 3);
+            this.panel3forallwordslbl.Name = "panel3forallwordslbl";
+            this.panel3forallwordslbl.Size = new System.Drawing.Size(800, 136);
+            this.panel3forallwordslbl.TabIndex = 6;
+            // 
+            // textBoxAllWords
+            // 
+            this.textBoxAllWords.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxAllWords.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.textBoxAllWords.Location = new System.Drawing.Point(32, 0);
+            this.textBoxAllWords.Margin = new System.Windows.Forms.Padding(0);
+            this.textBoxAllWords.Name = "textBoxAllWords";
+            this.textBoxAllWords.Size = new System.Drawing.Size(736, 133);
+            this.textBoxAllWords.TabIndex = 0;
+            this.textBoxAllWords.Text = "label2";
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.DodgerBlue;
@@ -198,7 +328,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.BackgroundImage = global::tusur_informatika_kursovaya.Resource.userbg;
+            this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.Controls.Add(this.panel22);
             this.panel4.Controls.Add(this.panel13);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
@@ -305,7 +435,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Transparent;
-            this.panel5.BackgroundImage = global::tusur_informatika_kursovaya.Resource.user2bg;
+            this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
             this.panel5.Controls.Add(this.panel15);
             this.panel5.Controls.Add(this.panel17);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
@@ -408,135 +538,6 @@
             this.panel20.Size = new System.Drawing.Size(147, 127);
             this.panel20.TabIndex = 4;
             // 
-            // panel3forallwordslbl
-            // 
-            this.panel3forallwordslbl.AutoScroll = true;
-            this.panel3forallwordslbl.Controls.Add(this.textBoxAllWords);
-            this.panel3forallwordslbl.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3forallwordslbl.Location = new System.Drawing.Point(0, 281);
-            this.panel3forallwordslbl.Margin = new System.Windows.Forms.Padding(30, 3, 30, 3);
-            this.panel3forallwordslbl.Name = "panel3forallwordslbl";
-            this.panel3forallwordslbl.Size = new System.Drawing.Size(800, 136);
-            this.panel3forallwordslbl.TabIndex = 6;
-            // 
-            // textBoxAllWords
-            // 
-            this.textBoxAllWords.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxAllWords.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.textBoxAllWords.Location = new System.Drawing.Point(32, 0);
-            this.textBoxAllWords.Margin = new System.Windows.Forms.Padding(0);
-            this.textBoxAllWords.Name = "textBoxAllWords";
-            this.textBoxAllWords.Size = new System.Drawing.Size(736, 133);
-            this.textBoxAllWords.TabIndex = 0;
-            this.textBoxAllWords.Text = "label2";
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Transparent;
-            this.panel7.Controls.Add(this.panel8);
-            this.panel7.Controls.Add(this.panel19);
-            this.panel7.Controls.Add(this.panel9);
-            this.panel7.Location = new System.Drawing.Point(218, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(352, 34);
-            this.panel7.TabIndex = 6;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.buttonGameTypeNames);
-            this.panel9.Controls.Add(this.panelBottomColorGameTypeNames);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel9.Location = new System.Drawing.Point(235, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(117, 34);
-            this.panel9.TabIndex = 6;
-            // 
-            // panelBottomColorGameTypeNames
-            // 
-            this.panelBottomColorGameTypeNames.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panelBottomColorGameTypeNames.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBottomColorGameTypeNames.Location = new System.Drawing.Point(0, 31);
-            this.panelBottomColorGameTypeNames.Name = "panelBottomColorGameTypeNames";
-            this.panelBottomColorGameTypeNames.Size = new System.Drawing.Size(117, 3);
-            this.panelBottomColorGameTypeNames.TabIndex = 0;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.buttonGameTypeCities);
-            this.panel8.Controls.Add(this.panelBottomColorGameTypeCities);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel8.Location = new System.Drawing.Point(1, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(117, 34);
-            this.panel8.TabIndex = 7;
-            // 
-            // panelBottomColorGameTypeCities
-            // 
-            this.panelBottomColorGameTypeCities.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panelBottomColorGameTypeCities.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBottomColorGameTypeCities.Location = new System.Drawing.Point(0, 31);
-            this.panelBottomColorGameTypeCities.Name = "panelBottomColorGameTypeCities";
-            this.panelBottomColorGameTypeCities.Size = new System.Drawing.Size(117, 3);
-            this.panelBottomColorGameTypeCities.TabIndex = 0;
-            // 
-            // panel19
-            // 
-            this.panel19.Controls.Add(this.buttonGameTypeAnimals);
-            this.panel19.Controls.Add(this.panelBottomColorGameTypeAnimals);
-            this.panel19.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel19.Location = new System.Drawing.Point(118, 0);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(117, 34);
-            this.panel19.TabIndex = 7;
-            // 
-            // panelBottomColorGameTypeAnimals
-            // 
-            this.panelBottomColorGameTypeAnimals.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panelBottomColorGameTypeAnimals.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBottomColorGameTypeAnimals.Location = new System.Drawing.Point(0, 31);
-            this.panelBottomColorGameTypeAnimals.Name = "panelBottomColorGameTypeAnimals";
-            this.panelBottomColorGameTypeAnimals.Size = new System.Drawing.Size(117, 3);
-            this.panelBottomColorGameTypeAnimals.TabIndex = 0;
-            // 
-            // buttonGameTypeCities
-            // 
-            this.buttonGameTypeCities.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonGameTypeCities.FlatAppearance.BorderSize = 0;
-            this.buttonGameTypeCities.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonGameTypeCities.Location = new System.Drawing.Point(0, 0);
-            this.buttonGameTypeCities.Name = "buttonGameTypeCities";
-            this.buttonGameTypeCities.Size = new System.Drawing.Size(117, 31);
-            this.buttonGameTypeCities.TabIndex = 1;
-            this.buttonGameTypeCities.Text = "города";
-            this.buttonGameTypeCities.UseVisualStyleBackColor = true;
-            this.buttonGameTypeCities.Click += new System.EventHandler(this.buttonGameTypeCities_Click);
-            // 
-            // buttonGameTypeAnimals
-            // 
-            this.buttonGameTypeAnimals.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonGameTypeAnimals.FlatAppearance.BorderSize = 0;
-            this.buttonGameTypeAnimals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonGameTypeAnimals.Location = new System.Drawing.Point(0, 0);
-            this.buttonGameTypeAnimals.Name = "buttonGameTypeAnimals";
-            this.buttonGameTypeAnimals.Size = new System.Drawing.Size(117, 31);
-            this.buttonGameTypeAnimals.TabIndex = 1;
-            this.buttonGameTypeAnimals.Text = "животные";
-            this.buttonGameTypeAnimals.UseVisualStyleBackColor = true;
-            this.buttonGameTypeAnimals.Click += new System.EventHandler(this.buttonGameTypeAnimals_Click);
-            // 
-            // buttonGameTypeNames
-            // 
-            this.buttonGameTypeNames.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonGameTypeNames.FlatAppearance.BorderSize = 0;
-            this.buttonGameTypeNames.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonGameTypeNames.Location = new System.Drawing.Point(0, 0);
-            this.buttonGameTypeNames.Name = "buttonGameTypeNames";
-            this.buttonGameTypeNames.Size = new System.Drawing.Size(117, 31);
-            this.buttonGameTypeNames.TabIndex = 1;
-            this.buttonGameTypeNames.Text = "имена";
-            this.buttonGameTypeNames.UseVisualStyleBackColor = true;
-            this.buttonGameTypeNames.Click += new System.EventHandler(this.buttonGameTypeNames_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -552,10 +553,15 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel19.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            this.panel3forallwordslbl.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel22.ResumeLayout(false);
@@ -565,11 +571,6 @@
             this.panel15.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
-            this.panel3forallwordslbl.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel19.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
