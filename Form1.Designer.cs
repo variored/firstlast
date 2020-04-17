@@ -48,8 +48,6 @@
             this.textBoxNewWord = new System.Windows.Forms.TextBox();
             this.buttonEnterNewWord = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel3forallwordslbl = new System.Windows.Forms.Panel();
-            this.textBoxAllWords = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel22 = new System.Windows.Forms.Panel();
             this.buttonGiveUp1 = new System.Windows.Forms.Button();
@@ -68,6 +66,9 @@
             this.panel18 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel20 = new System.Windows.Forms.Panel();
+            this.panel3forallwordslbl = new System.Windows.Forms.Panel();
+            this.textBoxAllWords = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -77,7 +78,6 @@
             this.panel12.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel3forallwordslbl.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel22.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -86,10 +86,12 @@
             this.panel15.SuspendLayout();
             this.panel17.SuspendLayout();
             this.panel18.SuspendLayout();
+            this.panel3forallwordslbl.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.buttonAboutMe);
             this.panel1.Controls.Add(this.buttonHelp);
@@ -211,25 +213,25 @@
             this.buttonAboutMe.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonAboutMe.FlatAppearance.BorderSize = 0;
             this.buttonAboutMe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAboutMe.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.buttonAboutMe.Location = new System.Drawing.Point(650, 0);
+            this.buttonAboutMe.ForeColor = System.Drawing.Color.SteelBlue;
+            this.buttonAboutMe.Location = new System.Drawing.Point(705, 0);
             this.buttonAboutMe.Name = "buttonAboutMe";
-            this.buttonAboutMe.Size = new System.Drawing.Size(75, 34);
+            this.buttonAboutMe.Size = new System.Drawing.Size(95, 34);
             this.buttonAboutMe.TabIndex = 5;
-            this.buttonAboutMe.Text = "about me";
+            this.buttonAboutMe.Text = "о разработчике";
             this.buttonAboutMe.UseVisualStyleBackColor = true;
             // 
             // buttonHelp
             // 
-            this.buttonHelp.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonHelp.Dock = System.Windows.Forms.DockStyle.Left;
             this.buttonHelp.FlatAppearance.BorderSize = 0;
             this.buttonHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonHelp.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.buttonHelp.Location = new System.Drawing.Point(725, 0);
+            this.buttonHelp.ForeColor = System.Drawing.Color.SteelBlue;
+            this.buttonHelp.Location = new System.Drawing.Point(0, 0);
             this.buttonHelp.Name = "buttonHelp";
             this.buttonHelp.Size = new System.Drawing.Size(75, 34);
             this.buttonHelp.TabIndex = 4;
-            this.buttonHelp.Text = "help";
+            this.buttonHelp.Text = "помощь";
             this.buttonHelp.UseVisualStyleBackColor = true;
             this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
             // 
@@ -271,7 +273,7 @@
             // 
             this.textBoxNewWord.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxNewWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxNewWord.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.textBoxNewWord.ForeColor = System.Drawing.Color.SteelBlue;
             this.textBoxNewWord.Location = new System.Drawing.Point(0, 0);
             this.textBoxNewWord.Name = "textBoxNewWord";
             this.textBoxNewWord.Size = new System.Drawing.Size(243, 27);
@@ -284,7 +286,7 @@
             this.buttonEnterNewWord.FlatAppearance.BorderSize = 0;
             this.buttonEnterNewWord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEnterNewWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonEnterNewWord.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.buttonEnterNewWord.ForeColor = System.Drawing.Color.SteelBlue;
             this.buttonEnterNewWord.Location = new System.Drawing.Point(0, 28);
             this.buttonEnterNewWord.Name = "buttonEnterNewWord";
             this.buttonEnterNewWord.Size = new System.Drawing.Size(243, 25);
@@ -295,7 +297,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel3.BackColor = System.Drawing.Color.SteelBlue;
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -303,28 +305,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(800, 227);
             this.panel3.TabIndex = 7;
-            // 
-            // panel3forallwordslbl
-            // 
-            this.panel3forallwordslbl.AutoScroll = true;
-            this.panel3forallwordslbl.Controls.Add(this.textBoxAllWords);
-            this.panel3forallwordslbl.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3forallwordslbl.Location = new System.Drawing.Point(0, 281);
-            this.panel3forallwordslbl.Margin = new System.Windows.Forms.Padding(30, 3, 30, 3);
-            this.panel3forallwordslbl.Name = "panel3forallwordslbl";
-            this.panel3forallwordslbl.Size = new System.Drawing.Size(800, 136);
-            this.panel3forallwordslbl.TabIndex = 6;
-            // 
-            // textBoxAllWords
-            // 
-            this.textBoxAllWords.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxAllWords.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.textBoxAllWords.Location = new System.Drawing.Point(32, 11);
-            this.textBoxAllWords.Margin = new System.Windows.Forms.Padding(0);
-            this.textBoxAllWords.Name = "textBoxAllWords";
-            this.textBoxAllWords.Size = new System.Drawing.Size(736, 122);
-            this.textBoxAllWords.TabIndex = 0;
-            this.textBoxAllWords.Text = "label2";
             // 
             // panel4
             // 
@@ -351,11 +331,11 @@
             // 
             // buttonGiveUp1
             // 
-            this.buttonGiveUp1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonGiveUp1.BackColor = System.Drawing.Color.SteelBlue;
             this.buttonGiveUp1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonGiveUp1.FlatAppearance.BorderSize = 0;
             this.buttonGiveUp1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
-            this.buttonGiveUp1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonGiveUp1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
             this.buttonGiveUp1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonGiveUp1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.259F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonGiveUp1.ForeColor = System.Drawing.Color.White;
@@ -458,11 +438,11 @@
             // 
             // buttonGiveUp2
             // 
-            this.buttonGiveUp2.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonGiveUp2.BackColor = System.Drawing.Color.SteelBlue;
             this.buttonGiveUp2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonGiveUp2.FlatAppearance.BorderSize = 0;
             this.buttonGiveUp2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
-            this.buttonGiveUp2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
+            this.buttonGiveUp2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
             this.buttonGiveUp2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonGiveUp2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.259F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonGiveUp2.ForeColor = System.Drawing.Color.White;
@@ -539,6 +519,41 @@
             this.panel20.Size = new System.Drawing.Size(147, 127);
             this.panel20.TabIndex = 4;
             // 
+            // panel3forallwordslbl
+            // 
+            this.panel3forallwordslbl.AutoScroll = true;
+            this.panel3forallwordslbl.Controls.Add(this.textBoxAllWords);
+            this.panel3forallwordslbl.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3forallwordslbl.Location = new System.Drawing.Point(0, 281);
+            this.panel3forallwordslbl.Margin = new System.Windows.Forms.Padding(30, 3, 30, 3);
+            this.panel3forallwordslbl.Name = "panel3forallwordslbl";
+            this.panel3forallwordslbl.Size = new System.Drawing.Size(800, 136);
+            this.panel3forallwordslbl.TabIndex = 6;
+            // 
+            // textBoxAllWords
+            // 
+            this.textBoxAllWords.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxAllWords.ForeColor = System.Drawing.Color.SteelBlue;
+            this.textBoxAllWords.Location = new System.Drawing.Point(32, 11);
+            this.textBoxAllWords.Margin = new System.Windows.Forms.Padding(0);
+            this.textBoxAllWords.Name = "textBoxAllWords";
+            this.textBoxAllWords.Size = new System.Drawing.Size(736, 122);
+            this.textBoxAllWords.TabIndex = 0;
+            this.textBoxAllWords.Text = "label2";
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.SteelBlue;
+            this.button1.Location = new System.Drawing.Point(75, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 34);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "словарь";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -563,7 +578,6 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.panel3forallwordslbl.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel22.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
@@ -572,6 +586,7 @@
             this.panel15.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
+            this.panel3forallwordslbl.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -617,6 +632,7 @@
         private System.Windows.Forms.Button buttonGameTypeCities;
         private System.Windows.Forms.Button buttonGameTypeAnimals;
         private System.Windows.Forms.Button buttonGameTypeNames;
+        private System.Windows.Forms.Button button1;
     }
 }
 

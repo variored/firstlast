@@ -346,9 +346,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(765, 450);
             this.Controls.Add(this.panelTotal);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form2";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
+            this.Text = "Помощь";
             this.panelTotal.ResumeLayout(false);
             this.panelRoof.ResumeLayout(false);
             this.panelRoof3.ResumeLayout(false);
