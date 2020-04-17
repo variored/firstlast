@@ -174,7 +174,36 @@ namespace tusur_informatika_kursovaya
                 panelBottomColorGameTypeNames.BackColor = System.Drawing.Color.DodgerBlue;
                 buttonGameTypeNames.BackColor = System.Drawing.Color.WhiteSmoke;
             }
+        }
 
+        private void buttonGameTypeNames_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("начать новую игру \"Имена\"?", "начать новую игру", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                SetNewGameType(3);
+                StartNewGame();
+            }
+        }
+
+        private void buttonGameTypeAnimals_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("начать новую игру \"Животные\"?", "начать новую игру", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                SetNewGameType(2);
+                StartNewGame();
+            }
+        }
+
+        private void buttonGameTypeCities_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("начать новую игру \"Города\"?", "начать новую игру", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                SetNewGameType(1);
+                StartNewGame();
+            }
         }
     }
 }

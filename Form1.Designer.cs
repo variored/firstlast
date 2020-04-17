@@ -31,7 +31,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonAboutMe = new System.Windows.Forms.Button();
             this.buttonHelp = new System.Windows.Forms.Button();
-            this.buttonStartNewGame = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -93,7 +92,6 @@
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.buttonAboutMe);
             this.panel1.Controls.Add(this.buttonHelp);
-            this.panel1.Controls.Add(this.buttonStartNewGame);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 417);
             this.panel1.Name = "panel1";
@@ -125,20 +123,6 @@
             this.buttonHelp.TabIndex = 4;
             this.buttonHelp.Text = "help";
             this.buttonHelp.UseVisualStyleBackColor = true;
-            // 
-            // buttonStartNewGame
-            // 
-            this.buttonStartNewGame.Dock = System.Windows.Forms.DockStyle.Left;
-            this.buttonStartNewGame.FlatAppearance.BorderSize = 0;
-            this.buttonStartNewGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonStartNewGame.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.buttonStartNewGame.Location = new System.Drawing.Point(0, 0);
-            this.buttonStartNewGame.Name = "buttonStartNewGame";
-            this.buttonStartNewGame.Size = new System.Drawing.Size(75, 34);
-            this.buttonStartNewGame.TabIndex = 3;
-            this.buttonStartNewGame.Text = "new game";
-            this.buttonStartNewGame.UseVisualStyleBackColor = true;
-            this.buttonStartNewGame.Click += new System.EventHandler(this.buttonStartNewGame_Click);
             // 
             // panel2
             // 
@@ -525,6 +509,7 @@
             this.buttonGameTypeCities.TabIndex = 1;
             this.buttonGameTypeCities.Text = "города";
             this.buttonGameTypeCities.UseVisualStyleBackColor = true;
+            this.buttonGameTypeCities.Click += new System.EventHandler(this.buttonGameTypeCities_Click);
             // 
             // buttonGameTypeAnimals
             // 
@@ -537,6 +522,7 @@
             this.buttonGameTypeAnimals.TabIndex = 1;
             this.buttonGameTypeAnimals.Text = "животные";
             this.buttonGameTypeAnimals.UseVisualStyleBackColor = true;
+            this.buttonGameTypeAnimals.Click += new System.EventHandler(this.buttonGameTypeAnimals_Click);
             // 
             // buttonGameTypeNames
             // 
@@ -549,6 +535,7 @@
             this.buttonGameTypeNames.TabIndex = 1;
             this.buttonGameTypeNames.Text = "имена";
             this.buttonGameTypeNames.UseVisualStyleBackColor = true;
+            this.buttonGameTypeNames.Click += new System.EventHandler(this.buttonGameTypeNames_Click);
             // 
             // Form1
             // 
@@ -599,7 +586,6 @@
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Button buttonStartNewGame;
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.Label labelUser1Counter;
         private System.Windows.Forms.Label labelIWalk1;
