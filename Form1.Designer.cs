@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonLibrary = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.buttonGameTypeCities = new System.Windows.Forms.Button();
@@ -68,7 +69,6 @@
             this.panel20 = new System.Windows.Forms.Panel();
             this.panel3forallwordslbl = new System.Windows.Forms.Panel();
             this.textBoxAllWords = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -91,7 +91,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.buttonLibrary);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.buttonAboutMe);
             this.panel1.Controls.Add(this.buttonHelp);
@@ -100,6 +100,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 34);
             this.panel1.TabIndex = 0;
+            // 
+            // buttonLibrary
+            // 
+            this.buttonLibrary.Dock = System.Windows.Forms.DockStyle.Left;
+            this.buttonLibrary.FlatAppearance.BorderSize = 0;
+            this.buttonLibrary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLibrary.ForeColor = System.Drawing.Color.SteelBlue;
+            this.buttonLibrary.Location = new System.Drawing.Point(75, 0);
+            this.buttonLibrary.Name = "buttonLibrary";
+            this.buttonLibrary.Size = new System.Drawing.Size(75, 34);
+            this.buttonLibrary.TabIndex = 7;
+            this.buttonLibrary.Text = "словарь";
+            this.buttonLibrary.UseVisualStyleBackColor = true;
+            this.buttonLibrary.Click += new System.EventHandler(this.buttonLibrary_Click);
             // 
             // panel7
             // 
@@ -541,19 +555,6 @@
             this.textBoxAllWords.TabIndex = 0;
             this.textBoxAllWords.Text = "label2";
             // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.SteelBlue;
-            this.button1.Location = new System.Drawing.Point(75, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 34);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "словарь";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -632,7 +633,7 @@
         private System.Windows.Forms.Button buttonGameTypeCities;
         private System.Windows.Forms.Button buttonGameTypeAnimals;
         private System.Windows.Forms.Button buttonGameTypeNames;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonLibrary;
     }
 }
 

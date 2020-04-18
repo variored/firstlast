@@ -223,5 +223,9 @@ namespace tusur_informatika_kursovaya
             }
         }
 
+        private void buttonLibrary_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
