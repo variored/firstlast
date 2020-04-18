@@ -225,7 +225,8 @@ namespace tusur_informatika_kursovaya
 
         private void buttonLibrary_Click(object sender, EventArgs e)
         {
-
+            Form4 form4_Help = new Form4(gameType);
+            form4_Help.Show();
         }
     }
 }

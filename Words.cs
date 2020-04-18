@@ -21,5 +21,9 @@ namespace tusur_informatika_kursovaya
             }
             else return true;
         }
+        public List <String> GetAllWords()
+        {
+            return words;
+        }
     }
 }
