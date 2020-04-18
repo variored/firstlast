@@ -16,5 +16,7 @@ namespace tusur_informatika_kursovaya
         {
             InitializeComponent();
         }
+
+      
     }
 }

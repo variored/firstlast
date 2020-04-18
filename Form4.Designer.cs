@@ -34,18 +34,18 @@
             this.panelFrameRight = new System.Windows.Forms.Panel();
             this.panelFrameTop = new System.Windows.Forms.Panel();
             this.panelTopLeft = new System.Windows.Forms.Panel();
-            this.pictureBoxWordsLogo = new System.Windows.Forms.PictureBox();
             this.panelTitle = new System.Windows.Forms.Panel();
             this.labelTitle = new System.Windows.Forms.Label();
             this.panelFramePictureLeft = new System.Windows.Forms.Panel();
             this.panelFramePictureRight = new System.Windows.Forms.Panel();
             this.panelFramePictureTop = new System.Windows.Forms.Panel();
             this.panelFramePictureBottom = new System.Windows.Forms.Panel();
+            this.pictureBoxWordsLogo = new System.Windows.Forms.PictureBox();
             this.panelTotal.SuspendLayout();
             this.panelWords.SuspendLayout();
             this.panelTopLeft.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWordsLogo)).BeginInit();
             this.panelTitle.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWordsLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTotal
@@ -56,7 +56,7 @@
             this.panelTotal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelTotal.Location = new System.Drawing.Point(0, 0);
             this.panelTotal.Name = "panelTotal";
-            this.panelTotal.Size = new System.Drawing.Size(800, 450);
+            this.panelTotal.Size = new System.Drawing.Size(800, 451);
             this.panelTotal.TabIndex = 0;
             // 
             // panelWords
@@ -68,7 +68,7 @@
             this.panelWords.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelWords.Location = new System.Drawing.Point(415, 0);
             this.panelWords.Name = "panelWords";
-            this.panelWords.Size = new System.Drawing.Size(385, 450);
+            this.panelWords.Size = new System.Drawing.Size(385, 451);
             this.panelWords.TabIndex = 0;
             // 
             // labelWords
@@ -88,7 +88,7 @@
             this.panelFrameRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelFrameRight.Location = new System.Drawing.Point(364, 0);
             this.panelFrameRight.Name = "panelFrameRight";
-            this.panelFrameRight.Size = new System.Drawing.Size(21, 450);
+            this.panelFrameRight.Size = new System.Drawing.Size(21, 451);
             this.panelFrameRight.TabIndex = 1;
             // 
             // panelFrameTop
@@ -111,16 +111,6 @@
             this.panelTopLeft.Name = "panelTopLeft";
             this.panelTopLeft.Size = new System.Drawing.Size(415, 258);
             this.panelTopLeft.TabIndex = 1;
-            // 
-            // pictureBoxWordsLogo
-            // 
-            this.pictureBoxWordsLogo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBoxWordsLogo.Location = new System.Drawing.Point(145, 66);
-            this.pictureBoxWordsLogo.Name = "pictureBoxWordsLogo";
-            this.pictureBoxWordsLogo.Size = new System.Drawing.Size(125, 125);
-            this.pictureBoxWordsLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxWordsLogo.TabIndex = 0;
-            this.pictureBoxWordsLogo.TabStop = false;
             // 
             // panelTitle
             // 
@@ -175,21 +165,35 @@
             this.panelFramePictureBottom.Size = new System.Drawing.Size(125, 67);
             this.panelFramePictureBottom.TabIndex = 3;
             // 
+            // pictureBoxWordsLogo
+            // 
+            this.pictureBoxWordsLogo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxWordsLogo.Location = new System.Drawing.Point(145, 66);
+            this.pictureBoxWordsLogo.MaximumSize = new System.Drawing.Size(125, 125);
+            this.pictureBoxWordsLogo.Name = "pictureBoxWordsLogo";
+            this.pictureBoxWordsLogo.Size = new System.Drawing.Size(125, 125);
+            this.pictureBoxWordsLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxWordsLogo.TabIndex = 0;
+            this.pictureBoxWordsLogo.TabStop = false;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 451);
             this.Controls.Add(this.panelTotal);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(816, 99999);
+            this.MinimumSize = new System.Drawing.Size(400, 0);
             this.Name = "Form4";
-            this.Text = "Form4";
+            this.Text = "FirstLast | Library";
             this.panelTotal.ResumeLayout(false);
             this.panelWords.ResumeLayout(false);
             this.panelWords.PerformLayout();
             this.panelTopLeft.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWordsLogo)).EndInit();
             this.panelTitle.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWordsLogo)).EndInit();
             this.ResumeLayout(false);
 
         }

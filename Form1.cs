@@ -38,7 +38,8 @@ namespace tusur_informatika_kursovaya
         }
         private void buttonAboutMe_Click(object sender, EventArgs e)
         {
-            /*form2.Show();*/
+            Form3 form3_AboutMe = new Form3();
+            form3_AboutMe.Show();
         }
         private void buttonEnterNewWord_Click(object sender, EventArgs e)
         {
@@ -229,5 +230,6 @@ namespace tusur_informatika_kursovaya
             Form4 form4_Help = new Form4(gameType);
             form4_Help.Show();
         }
+
     }
 }

@@ -49,6 +49,8 @@
             this.textBoxNewWord = new System.Windows.Forms.TextBox();
             this.buttonEnterNewWord = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel3forallwordslbl = new System.Windows.Forms.Panel();
+            this.textBoxAllWords = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel22 = new System.Windows.Forms.Panel();
             this.buttonGiveUp1 = new System.Windows.Forms.Button();
@@ -67,8 +69,6 @@
             this.panel18 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.panel3forallwordslbl = new System.Windows.Forms.Panel();
-            this.textBoxAllWords = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -78,6 +78,7 @@
             this.panel12.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel3forallwordslbl.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel22.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -86,7 +87,6 @@
             this.panel15.SuspendLayout();
             this.panel17.SuspendLayout();
             this.panel18.SuspendLayout();
-            this.panel3forallwordslbl.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -234,6 +234,7 @@
             this.buttonAboutMe.TabIndex = 5;
             this.buttonAboutMe.Text = "о разработчике";
             this.buttonAboutMe.UseVisualStyleBackColor = true;
+            this.buttonAboutMe.Click += new System.EventHandler(this.buttonAboutMe_Click);
             // 
             // buttonHelp
             // 
@@ -319,6 +320,28 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(800, 227);
             this.panel3.TabIndex = 7;
+            // 
+            // panel3forallwordslbl
+            // 
+            this.panel3forallwordslbl.AutoScroll = true;
+            this.panel3forallwordslbl.Controls.Add(this.textBoxAllWords);
+            this.panel3forallwordslbl.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3forallwordslbl.Location = new System.Drawing.Point(0, 281);
+            this.panel3forallwordslbl.Margin = new System.Windows.Forms.Padding(30, 3, 30, 3);
+            this.panel3forallwordslbl.Name = "panel3forallwordslbl";
+            this.panel3forallwordslbl.Size = new System.Drawing.Size(800, 136);
+            this.panel3forallwordslbl.TabIndex = 6;
+            // 
+            // textBoxAllWords
+            // 
+            this.textBoxAllWords.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxAllWords.ForeColor = System.Drawing.Color.SteelBlue;
+            this.textBoxAllWords.Location = new System.Drawing.Point(32, 11);
+            this.textBoxAllWords.Margin = new System.Windows.Forms.Padding(0);
+            this.textBoxAllWords.Name = "textBoxAllWords";
+            this.textBoxAllWords.Size = new System.Drawing.Size(736, 122);
+            this.textBoxAllWords.TabIndex = 0;
+            this.textBoxAllWords.Text = "label2";
             // 
             // panel4
             // 
@@ -533,28 +556,6 @@
             this.panel20.Size = new System.Drawing.Size(147, 127);
             this.panel20.TabIndex = 4;
             // 
-            // panel3forallwordslbl
-            // 
-            this.panel3forallwordslbl.AutoScroll = true;
-            this.panel3forallwordslbl.Controls.Add(this.textBoxAllWords);
-            this.panel3forallwordslbl.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3forallwordslbl.Location = new System.Drawing.Point(0, 281);
-            this.panel3forallwordslbl.Margin = new System.Windows.Forms.Padding(30, 3, 30, 3);
-            this.panel3forallwordslbl.Name = "panel3forallwordslbl";
-            this.panel3forallwordslbl.Size = new System.Drawing.Size(800, 136);
-            this.panel3forallwordslbl.TabIndex = 6;
-            // 
-            // textBoxAllWords
-            // 
-            this.textBoxAllWords.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxAllWords.ForeColor = System.Drawing.Color.SteelBlue;
-            this.textBoxAllWords.Location = new System.Drawing.Point(32, 11);
-            this.textBoxAllWords.Margin = new System.Windows.Forms.Padding(0);
-            this.textBoxAllWords.Name = "textBoxAllWords";
-            this.textBoxAllWords.Size = new System.Drawing.Size(736, 122);
-            this.textBoxAllWords.TabIndex = 0;
-            this.textBoxAllWords.Text = "label2";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -568,7 +569,7 @@
             this.MinimumSize = new System.Drawing.Size(816, 490);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "FirstLast";
             this.panel1.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
@@ -579,6 +580,7 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.panel3forallwordslbl.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel22.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
@@ -587,7 +589,6 @@
             this.panel15.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
-            this.panel3forallwordslbl.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
