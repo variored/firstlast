@@ -163,6 +163,7 @@ namespace tusur_informatika_kursovaya
             game.StartNewGame();
             game.SetGameType(gameType);
             SetNewColorButtonGameType();
+            textBoxNewWord.Text = "";
             UpdateWindowInfo();
 
         }
