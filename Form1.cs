@@ -16,6 +16,7 @@ namespace tusur_informatika_kursovaya
             InitializeComponent();
             StartNewGame();
             UpdateWindowInfo();
+            buttonHelp_Click(buttonHelp, EventArgs.Empty);
         }
 
         private void buttonGiveUp1_Click(object sender, EventArgs e)

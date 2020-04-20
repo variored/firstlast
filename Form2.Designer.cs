@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panelTotal = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.panelMiddle = new System.Windows.Forms.Panel();
             this.panelRoof = new System.Windows.Forms.Panel();
             this.panelRoof3 = new System.Windows.Forms.Panel();
@@ -53,9 +56,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
             this.panelTotal.SuspendLayout();
             this.panelRoof.SuspendLayout();
             this.panelRoof3.SuspendLayout();
@@ -82,6 +82,34 @@
             this.panelTotal.Name = "panelTotal";
             this.panelTotal.Size = new System.Drawing.Size(765, 450);
             this.panelTotal.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(71, 271);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(623, 179);
+            this.label4.TabIndex = 2;
+            this.label4.Text = resources.GetString("label4.Text");
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel14
+            // 
+            this.panel14.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel14.Location = new System.Drawing.Point(694, 271);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(71, 179);
+            this.panel14.TabIndex = 3;
+            // 
+            // panel13
+            // 
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel13.Location = new System.Drawing.Point(0, 271);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(71, 179);
+            this.panel13.TabIndex = 3;
             // 
             // panelMiddle
             // 
@@ -312,34 +340,6 @@
             this.panel1.Size = new System.Drawing.Size(255, 65);
             this.panel1.TabIndex = 1;
             // 
-            // label4
-            // 
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(71, 271);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(623, 179);
-            this.label4.TabIndex = 2;
-            this.label4.Text = resources.GetString("label4.Text");
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel13
-            // 
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel13.Location = new System.Drawing.Point(0, 271);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(71, 179);
-            this.panel13.TabIndex = 3;
-            // 
-            // panel14
-            // 
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel14.Location = new System.Drawing.Point(694, 271);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(71, 179);
-            this.panel14.TabIndex = 3;
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -352,6 +352,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Помощь";
+            this.TopMost = true;
             this.panelTotal.ResumeLayout(false);
             this.panelRoof.ResumeLayout(false);
             this.panelRoof3.ResumeLayout(false);
