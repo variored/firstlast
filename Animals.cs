@@ -157,7 +157,6 @@ namespace tusur_informatika_kursovaya
             words.Add("Ящерица");
             words.Add("Ястреб");
             words.Add("Як");
-
         }
     }
 }

@@ -132,49 +132,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="sourse\fon-31534.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="sourse\sinie-puzyrki.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="sourse\abstrakciya_liniy_boke_uzory_minimalizm_47131_2560x1024.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="sourse\backgroundUser11.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="sourse\backgroundUser12.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="sourse\02c48c04e3aaf96e0edf16325a4b0cdb.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="sourse\109808-liniya-kozha-monohromnyj-atmosfera-chernyy-1920x1200.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="sourse\user2bg.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="sourse\userbg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="sourse\settings.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="sourse\computerlogo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="sourse\userlogo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="sourse\02d0a825490985.56346203ebada.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="sourse\c927e6317df45ff2312ad97abc0dd010.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="sourse\cities.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="sourse\help_animal.png" />
@@ -190,6 +151,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="sourse\crown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sourse\icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
