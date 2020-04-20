@@ -23,7 +23,7 @@ namespace tusur_informatika_kursovaya
         }
         public List <String> GetAllWords()
         {
-            return words;
+            return new List<String>(words);
         }
     }
 }
