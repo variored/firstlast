@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Windows.Forms;
-using System.Collections.Generic;
 
 namespace tusur_informatika_kursovaya
 {
     public partial class Form1 : Form
     {
-
         private Game game = new Game();
         private int gameType = 1;
         private string lastWord = "";
@@ -18,7 +16,6 @@ namespace tusur_informatika_kursovaya
             UpdateWindowInfo();
             buttonHelp_Click(buttonHelp, EventArgs.Empty);
         }
-
         private void buttonGiveUp1_Click(object sender, EventArgs e)
         {
             game.SetGiveUp(1);
@@ -243,7 +240,6 @@ namespace tusur_informatika_kursovaya
                 StartNewGame();
             }
         }
-
         private void buttonLibrary_Click(object sender, EventArgs e)
         {
             Form4 form4_Help = new Form4(gameType);

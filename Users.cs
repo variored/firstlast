@@ -10,8 +10,6 @@ namespace tusur_informatika_kursovaya
 
         public Users()
         {
-
-
             for (int i = 0; i <= 2-1; i++)
             {
                 users.Add(AddUser());
@@ -71,12 +69,10 @@ namespace tusur_informatika_kursovaya
             users[0].ReserData();
             users[1].ReserData();
         }
-
-        internal bool IsRealWord(string _word, int _Id)
+        public bool IsRealWord(string _word, int _Id)
         {
             return users[_Id - 1].IsRealWord(_word);
         }
-
         private User AddUser()
         {
             return new User();

@@ -12,7 +12,6 @@ namespace tusur_informatika_kursovaya
         private int gameType;
         private int score = 0;
         
-
         public User()
         {
 
@@ -65,22 +64,6 @@ namespace tusur_informatika_kursovaya
             hasWords.Clear();
             lose = false;
         }
-        private void CreateWords()
-        {
-            if (gameType == 1)
-            {
-                words = new Cities();
-            }
-            else if (gameType == 2)
-            {
-                words = new Animals();
-            }
-            else if (gameType == 3)
-            {
-                words = new Names();
-            }
-        }
-
         public bool IsRealWord(string _word)
         {
             string firstUpper = _word;
@@ -98,6 +81,21 @@ namespace tusur_informatika_kursovaya
             
 
             return words.Exists(firstUpper);
+        }
+        private void CreateWords()
+        {
+            if (gameType == 1)
+            {
+                words = new Cities();
+            }
+            else if (gameType == 2)
+            {
+                words = new Animals();
+            }
+            else if (gameType == 3)
+            {
+                words = new Names();
+            }
         }
     }
 }

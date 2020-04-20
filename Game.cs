@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-
 namespace tusur_informatika_kursovaya
 {
     class Game
@@ -19,23 +17,6 @@ namespace tusur_informatika_kursovaya
         public int GetCount(int _Id)
         {
             return users.GetCount(_Id);
-        }
-        private String FirstUpper(String _word)
-        {
-            string firstUp = _word;
-            for (int i = 0; i < _word.Length; i++)
-            {
-                if (i == 0)
-                {
-                    firstUp = firstUp.ToCharArray()[0].ToString().ToUpper();
-                }
-                else
-                {
-                    firstUp += _word.ToCharArray()[i].ToString();
-                }
-            }
-            return firstUp;
-
         }
         public bool AddWord(String _word)
         {
@@ -67,17 +48,6 @@ namespace tusur_informatika_kursovaya
 
             remainingWords = users.GetLibrary();
         }
-        private void switchUser()
-        {
-            if (currentPlayer == 1)
-            {
-                SetCurrentPlayer(2);
-            }
-            else
-            {
-                SetCurrentPlayer(1);
-            }
-        }
         public String[] GetWords(int _Id)
         {
             return users.GetWords(_Id);
@@ -86,12 +56,10 @@ namespace tusur_informatika_kursovaya
         {
             return users.GetTotalSum();
         }
-
         public bool IsRealWord(string _word)
         {
             return users.IsRealWord(_word, currentPlayer);
         }
-
         public void SetGameType(int _newGameType)
         {
             users.SetGameType(_newGameType);
@@ -107,19 +75,6 @@ namespace tusur_informatika_kursovaya
                 return allWords[allWords.Count - 1];
             }
         }
-        private int GetCorrentIndexOfLastLetter()
-        {
-            int indexOfLast = 1;
-            while (allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'ь'
-                || allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'ъ'
-                || allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'й'
-                || allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'ы')
-            {
-                indexOfLast++;
-            }
-            return indexOfLast;
-        }
-
         public string GetNewWordWithLetter(char _firstLetter)
         {
             foreach(String word in remainingWords)
@@ -131,7 +86,6 @@ namespace tusur_informatika_kursovaya
             }
             return "lose";
         }
-
         public char GetLastLetter()
         {
             int indexOfLast = 1;
@@ -159,7 +113,6 @@ namespace tusur_informatika_kursovaya
             }
             return false;
         }
-
         public void SetGiveUp(int _Id)
         {
             users.SetGiveUp(_Id);
@@ -168,14 +121,6 @@ namespace tusur_informatika_kursovaya
         public int CheckLoser()
         {
             return users.CheckLoser();
-        }
-        private bool WordExists(String _word)
-        {
-            if (allWords.IndexOf(_word) == -1)
-            {
-                return false;
-            }
-            else return true;
         }
         public void SetCurrentPlayer(int _Id)
         {
@@ -202,6 +147,53 @@ namespace tusur_informatika_kursovaya
 
             return buffAllWords;
         }
+        private bool WordExists(String _word)
+        {
+            if (allWords.IndexOf(_word) == -1)
+            {
+                return false;
+            }
+            else return true;
+        }
+        private int GetCorrentIndexOfLastLetter()
+        {
+            int indexOfLast = 1;
+            while (allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'ь'
+                || allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'ъ'
+                || allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'й'
+                || allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'ы')
+            {
+                indexOfLast++;
+            }
+            return indexOfLast;
+        }
+        private String FirstUpper(String _word)
+        {
+            string firstUp = _word;
+            for (int i = 0; i < _word.Length; i++)
+            {
+                if (i == 0)
+                {
+                    firstUp = firstUp.ToCharArray()[0].ToString().ToUpper();
+                }
+                else
+                {
+                    firstUp += _word.ToCharArray()[i].ToString();
+                }
+            }
+            return firstUp;
 
+        }
+        private void switchUser()
+        {
+            if (currentPlayer == 1)
+            {
+                SetCurrentPlayer(2);
+            }
+            else
+            {
+                SetCurrentPlayer(1);
+            }
+        }
     }
 }
