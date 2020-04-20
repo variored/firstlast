@@ -9,6 +9,7 @@ namespace tusur_informatika_kursovaya
         private Users users = new Users();
         private int gameType;
         private List<String> allWords = new List<String>();
+        private List<String> remainingWords = new List<String>();
         private int currentPlayer;
 
         public Game()
@@ -19,8 +20,26 @@ namespace tusur_informatika_kursovaya
         {
             return users.GetCount(_Id);
         }
+        private String FirstUpper(String _word)
+        {
+            string firstUp = _word;
+            for (int i = 0; i < _word.Length; i++)
+            {
+                if (i == 0)
+                {
+                    firstUp = firstUp.ToCharArray()[0].ToString().ToUpper();
+                }
+                else
+                {
+                    firstUp += _word.ToCharArray()[i].ToString();
+                }
+            }
+            return firstUp;
+
+        }
         public bool AddWord(String _word)
         {
+            
             if (WordExists(_word))
             {
                 return false;
@@ -29,10 +48,17 @@ namespace tusur_informatika_kursovaya
             {
                 users.AddWord(_word, currentPlayer);
                 allWords.Add(_word);
+                String newWord = FirstUpper(_word);
+                remainingWords.Remove(newWord);
                 switchUser();
             }
             return true;
 
+        }
+        public void FillReminingWords()
+        {
+
+            remainingWords = users.GetLibrary();
         }
         private void switchUser()
         {
@@ -87,9 +113,15 @@ namespace tusur_informatika_kursovaya
             return indexOfLast;
         }
 
-        public string GetNewWordWithLetter(char firstWord)
+        public string GetNewWordWithLetter(char _firstLetter)
         {
-            //add new global list with all words players didn't use
+            foreach(String word in remainingWords)
+            {
+                if (word[0] == _firstLetter)
+                {
+                    return word;
+                }
+            }
             return "lose";
         }
 

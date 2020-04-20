@@ -18,7 +18,10 @@ namespace tusur_informatika_kursovaya
             }
         }
 
-
+        public List<String> GetLibrary()
+        {
+            return users[0].GetLibrary();
+        }
         public int GetCount(int _Id)
         {
             return users[_Id - 1].GetCount();

@@ -65,6 +65,7 @@ namespace tusur_informatika_kursovaya
             if (game.GetCurrentPlayer() == 2)
             {
                 lastWord = game.GetNewWordWithLetter(textBoxNewWord.Text[0]);
+                
                 if (lastWord == "lose")
                 {
                     game.SetGiveUp(2);
@@ -73,6 +74,9 @@ namespace tusur_informatika_kursovaya
                 }
                 else
                 {
+                    textBoxNewWord.Text = lastWord;
+                     
+
                     buttonEnterNewWord_Click(buttonEnterNewWord, EventArgs.Empty);
                 }
                 
@@ -170,6 +174,8 @@ namespace tusur_informatika_kursovaya
         {
             game.StartNewGame();
             game.SetGameType(gameType);
+            game.FillReminingWords();
+
             SetNewColorButtonGameType();
             textBoxNewWord.Text = "";
             UpdateWindowInfo();

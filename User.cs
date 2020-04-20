@@ -17,6 +17,10 @@ namespace tusur_informatika_kursovaya
         {
 
         }
+        public List<String> GetLibrary()
+        {
+            return words.GetAllWords();
+        }
         public String[] GetWordsList()
         {
             String[] wordsArray = new String[hasWords.Count-1];
