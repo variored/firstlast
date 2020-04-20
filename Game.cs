@@ -73,6 +73,18 @@ namespace tusur_informatika_kursovaya
                 return allWords[allWords.Count - 1];
             }
         }
+        private int GetCorrentIndexOfLastLetter()
+        {
+            int indexOfLast = 1;
+            while (allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'ь'
+                || allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'ъ'
+                || allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'й'
+                || allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'ы')
+            {
+                indexOfLast++;
+            }
+            return indexOfLast;
+        }
         public char GetLastLetter()
         {
             int indexOfLast = 1;
@@ -81,32 +93,20 @@ namespace tusur_informatika_kursovaya
             {
                 return '-';
             }
-            while (allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'ь'
-                || allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'ъ'
-                || allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'й'
-                || allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'ы')
-            {
-                indexOfLast++;
-            }
-            return allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast];
+            
+            return allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - GetCorrentIndexOfLastLetter()];
             
         }
         public bool ViaRules(string _word)
         {
-            int indexOfLast = 1;
+            
 
             if (allWords.Count == 0)
             {
                 return true;
             }
-            while (allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'ь'
-                || allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'ъ'
-                || allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'й'
-                || allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'ы')
-            {
-                indexOfLast++;
-            }
-            if (allWords[allWords.Count-1][allWords[allWords.Count - 1].Length- indexOfLast] == _word[0])
+            
+            if (allWords[allWords.Count-1][allWords[allWords.Count - 1].Length - GetCorrentIndexOfLastLetter()] == _word[0])
             {
                 return true;
             }
