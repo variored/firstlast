@@ -75,8 +75,6 @@ namespace tusur_informatika_kursovaya
                 else
                 {
                     textBoxNewWord.Text = lastWord;
-                     
-
                     buttonEnterNewWord_Click(buttonEnterNewWord, EventArgs.Empty);
                 }
                 

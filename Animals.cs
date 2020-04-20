@@ -98,6 +98,12 @@ namespace tusur_informatika_kursovaya
             words.Add("Рабдодон");
             words.Add("Рабирубия");
             words.Add("Равара");
+            words.Add("Сурок");
+            words.Add("Стрекоза");
+            words.Add("Страус");
+            words.Add("Сорока");
+            words.Add("Сокол");
+            words.Add("Сова");
             words.Add("Табачная белокрылка");
             words.Add("Табачногрудый древолаз");
             words.Add("Табачный жук");
