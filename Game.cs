@@ -31,7 +31,7 @@ namespace tusur_informatika_kursovaya
                 switchUser();
             }
             return true;
-            
+
         }
         private void switchUser()
         {
@@ -62,14 +62,51 @@ namespace tusur_informatika_kursovaya
         {
             users.SetGameType(_newGameType);
         }
+        public String GetLastWord()
+        {
+            if (allWords.Count == 0)
+            {
+                return "";
+            }
+            else
+            {
+                return allWords[allWords.Count - 1];
+            }
+        }
+        public char GetLastLetter()
+        {
+            int indexOfLast = 1;
 
+            if (allWords.Count == 0)
+            {
+                return '-';
+            }
+            while (allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'ь'
+                || allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'ъ'
+                || allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'й'
+                || allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'ы')
+            {
+                indexOfLast++;
+            }
+            return allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast];
+            
+        }
         public bool ViaRules(string _word)
         {
+            int indexOfLast = 1;
+
             if (allWords.Count == 0)
             {
                 return true;
             }
-            if (allWords[allWords.Count-1][allWords[allWords.Count - 1].Length-1] == _word[0])
+            while (allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'ь'
+                || allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'ъ'
+                || allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'й'
+                || allWords[allWords.Count - 1][allWords[allWords.Count - 1].Length - indexOfLast] == 'ы')
+            {
+                indexOfLast++;
+            }
+            if (allWords[allWords.Count-1][allWords[allWords.Count - 1].Length- indexOfLast] == _word[0])
             {
                 return true;
             }

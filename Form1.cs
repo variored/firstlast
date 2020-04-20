@@ -8,7 +8,6 @@ namespace tusur_informatika_kursovaya
     {
 
         private Game game = new Game();
-        private String lastWord = "";
         private int gameType = 1;
 
         public Form1()
@@ -67,7 +66,7 @@ namespace tusur_informatika_kursovaya
         }
         private void ShowIncorrectLetter()
         {
-            MessageBox.Show("last letter must be: " + lastWord[lastWord.Length - 1].ToString().ToUpper(), "ERROR");
+            MessageBox.Show("last letter must be: " + game.GetLastLetter().ToString().ToUpper(), "ERROR");
         }
         private void buttonStartNewGame_Click(object sender, EventArgs e)
         {
@@ -79,10 +78,6 @@ namespace tusur_informatika_kursovaya
             
             String[] allWords = game.GetAllWords();
 
-            if (allWords.Length != 0)
-            {
-                lastWord = allWords[allWords.Length - 1];
-            }
 
             for (int i = 0; i <= allWords.Length-1; i++)
             {
@@ -115,9 +110,9 @@ namespace tusur_informatika_kursovaya
         }
         private void AddFirsLetterOfNextWord()
         {
-            if (lastWord != "")
+            if (game.GetLastLetter() != '-')
             {
-                textBoxNewWord.Text = lastWord[lastWord.Length - 1].ToString().ToUpper();
+                textBoxNewWord.Text = game.GetLastLetter().ToString().ToUpper();
             }
         }
         private void ShowWhoLoser()
