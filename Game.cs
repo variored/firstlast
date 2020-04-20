@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace tusur_informatika_kursovaya
 {
@@ -85,6 +86,13 @@ namespace tusur_informatika_kursovaya
             }
             return indexOfLast;
         }
+
+        public string GetNewWordWithLetter(char firstWord)
+        {
+            //add new global list with all words players didn't use
+            return "lose";
+        }
+
         public char GetLastLetter()
         {
             int indexOfLast = 1;
@@ -116,6 +124,7 @@ namespace tusur_informatika_kursovaya
         public void SetGiveUp(int _Id)
         {
             users.SetGiveUp(_Id);
+
         }
         public int CheckLoser()
         {

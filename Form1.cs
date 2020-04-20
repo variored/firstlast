@@ -9,6 +9,7 @@ namespace tusur_informatika_kursovaya
 
         private Game game = new Game();
         private int gameType = 1;
+        private string lastWord = "";
 
         public Form1()
         {
@@ -24,12 +25,6 @@ namespace tusur_informatika_kursovaya
             StartNewGame();
             
         }
-        private void buttonGiveUp2_Click(object sender, EventArgs e)
-        {
-            game.SetGiveUp(2);
-            UpdateWindowInfo();
-            StartNewGame();
-        }
         private void buttonHelp_Click(object sender, EventArgs e)
         {
             Form2 form2 = new Form2();
@@ -43,6 +38,8 @@ namespace tusur_informatika_kursovaya
         private void buttonEnterNewWord_Click(object sender, EventArgs e)
         {
             
+
+
             if (!game.IsRealWord(textBoxNewWord.Text.ToString().ToLower()))
             {
                 MessageBox.Show("unreal word: " + textBoxNewWord.Text.ToString().ToLower(), "unreal word: " + textBoxNewWord.Text.ToString().ToLower());
@@ -63,6 +60,23 @@ namespace tusur_informatika_kursovaya
             }
             
             UpdateWindowInfo();
+            
+            //if the next player is computer
+            if (game.GetCurrentPlayer() == 2)
+            {
+                lastWord = game.GetNewWordWithLetter(textBoxNewWord.Text[0]);
+                if (lastWord == "lose")
+                {
+                    game.SetGiveUp(2);
+                    UpdateWindowInfo();
+                    StartNewGame();
+                }
+                else
+                {
+                    buttonEnterNewWord_Click(buttonEnterNewWord, EventArgs.Empty);
+                }
+                
+            }
         }
         private void ShowIncorrectLetter()
         {
@@ -138,12 +152,10 @@ namespace tusur_informatika_kursovaya
             if (game.GetCurrentPlayer() == 1)
             {
                 labelIWalk1.Text = "ваше слово..";
-                labelIWalk2.Text = "";
             }
-            if (game.GetCurrentPlayer() == 2)
+            else
             {
                 labelIWalk1.Text = "";
-                labelIWalk2.Text = "ваше слово..";
             }
         }
         private void ShowLoser(int _Id)

@@ -49,8 +49,6 @@
             this.textBoxNewWord = new System.Windows.Forms.TextBox();
             this.buttonEnterNewWord = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel3forallwordslbl = new System.Windows.Forms.Panel();
-            this.textBoxAllWords = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel22 = new System.Windows.Forms.Panel();
             this.buttonGiveUp1 = new System.Windows.Forms.Button();
@@ -62,13 +60,13 @@
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.buttonGiveUp2 = new System.Windows.Forms.Button();
-            this.labelIWalk2 = new System.Windows.Forms.Label();
             this.labelUser2Counter = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel20 = new System.Windows.Forms.Panel();
+            this.panel3forallwordslbl = new System.Windows.Forms.Panel();
+            this.textBoxAllWords = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -78,7 +76,6 @@
             this.panel12.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel3forallwordslbl.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel22.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -87,6 +84,7 @@
             this.panel15.SuspendLayout();
             this.panel17.SuspendLayout();
             this.panel18.SuspendLayout();
+            this.panel3forallwordslbl.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -321,28 +319,6 @@
             this.panel3.Size = new System.Drawing.Size(800, 227);
             this.panel3.TabIndex = 7;
             // 
-            // panel3forallwordslbl
-            // 
-            this.panel3forallwordslbl.AutoScroll = true;
-            this.panel3forallwordslbl.Controls.Add(this.textBoxAllWords);
-            this.panel3forallwordslbl.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3forallwordslbl.Location = new System.Drawing.Point(0, 281);
-            this.panel3forallwordslbl.Margin = new System.Windows.Forms.Padding(30, 3, 30, 3);
-            this.panel3forallwordslbl.Name = "panel3forallwordslbl";
-            this.panel3forallwordslbl.Size = new System.Drawing.Size(800, 136);
-            this.panel3forallwordslbl.TabIndex = 6;
-            // 
-            // textBoxAllWords
-            // 
-            this.textBoxAllWords.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxAllWords.ForeColor = System.Drawing.Color.SteelBlue;
-            this.textBoxAllWords.Location = new System.Drawing.Point(32, 11);
-            this.textBoxAllWords.Margin = new System.Windows.Forms.Padding(0);
-            this.textBoxAllWords.Name = "textBoxAllWords";
-            this.textBoxAllWords.Size = new System.Drawing.Size(736, 122);
-            this.textBoxAllWords.TabIndex = 0;
-            this.textBoxAllWords.Text = "label2";
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
@@ -464,43 +440,12 @@
             // 
             // panel15
             // 
-            this.panel15.Controls.Add(this.buttonGiveUp2);
-            this.panel15.Controls.Add(this.labelIWalk2);
             this.panel15.Controls.Add(this.labelUser2Counter);
             this.panel15.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel15.Location = new System.Drawing.Point(0, 146);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(400, 81);
             this.panel15.TabIndex = 6;
-            // 
-            // buttonGiveUp2
-            // 
-            this.buttonGiveUp2.BackColor = System.Drawing.Color.SteelBlue;
-            this.buttonGiveUp2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.buttonGiveUp2.FlatAppearance.BorderSize = 0;
-            this.buttonGiveUp2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
-            this.buttonGiveUp2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
-            this.buttonGiveUp2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonGiveUp2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.259F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonGiveUp2.ForeColor = System.Drawing.Color.White;
-            this.buttonGiveUp2.Location = new System.Drawing.Point(0, 58);
-            this.buttonGiveUp2.Name = "buttonGiveUp2";
-            this.buttonGiveUp2.Size = new System.Drawing.Size(400, 23);
-            this.buttonGiveUp2.TabIndex = 3;
-            this.buttonGiveUp2.Text = "сдаться";
-            this.buttonGiveUp2.UseVisualStyleBackColor = false;
-            this.buttonGiveUp2.Click += new System.EventHandler(this.buttonGiveUp2_Click);
-            // 
-            // labelIWalk2
-            // 
-            this.labelIWalk2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelIWalk2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelIWalk2.ForeColor = System.Drawing.Color.Transparent;
-            this.labelIWalk2.Location = new System.Drawing.Point(0, 30);
-            this.labelIWalk2.Name = "labelIWalk2";
-            this.labelIWalk2.Size = new System.Drawing.Size(400, 30);
-            this.labelIWalk2.TabIndex = 1;
-            this.labelIWalk2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // labelUser2Counter
             // 
@@ -556,6 +501,28 @@
             this.panel20.Size = new System.Drawing.Size(147, 127);
             this.panel20.TabIndex = 4;
             // 
+            // panel3forallwordslbl
+            // 
+            this.panel3forallwordslbl.AutoScroll = true;
+            this.panel3forallwordslbl.Controls.Add(this.textBoxAllWords);
+            this.panel3forallwordslbl.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3forallwordslbl.Location = new System.Drawing.Point(0, 281);
+            this.panel3forallwordslbl.Margin = new System.Windows.Forms.Padding(30, 3, 30, 3);
+            this.panel3forallwordslbl.Name = "panel3forallwordslbl";
+            this.panel3forallwordslbl.Size = new System.Drawing.Size(800, 136);
+            this.panel3forallwordslbl.TabIndex = 6;
+            // 
+            // textBoxAllWords
+            // 
+            this.textBoxAllWords.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxAllWords.ForeColor = System.Drawing.Color.SteelBlue;
+            this.textBoxAllWords.Location = new System.Drawing.Point(32, 11);
+            this.textBoxAllWords.Margin = new System.Windows.Forms.Padding(0);
+            this.textBoxAllWords.Name = "textBoxAllWords";
+            this.textBoxAllWords.Size = new System.Drawing.Size(736, 122);
+            this.textBoxAllWords.TabIndex = 0;
+            this.textBoxAllWords.Text = "label2";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -580,7 +547,6 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.panel3forallwordslbl.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel22.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
@@ -589,6 +555,7 @@
             this.panel15.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
+            this.panel3forallwordslbl.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -614,14 +581,12 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Label labelIWalk2;
         private System.Windows.Forms.Label labelUser2Counter;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Button buttonGiveUp1;
-        private System.Windows.Forms.Button buttonGiveUp2;
         private System.Windows.Forms.Button buttonAboutMe;
         private System.Windows.Forms.Button buttonHelp;
         private System.Windows.Forms.Panel panel9;
