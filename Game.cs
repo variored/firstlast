@@ -53,7 +53,14 @@ namespace tusur_informatika_kursovaya
                 switchUser();
             }
             return true;
-
+        }
+        public void AddPoint(int _Id)
+        {
+            users.AddPoint(_Id);
+        }
+        public int GetScore(int _Id)
+        {
+            return users.GetScore(_Id);
         }
         public void FillReminingWords()
         {

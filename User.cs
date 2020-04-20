@@ -10,12 +10,20 @@ namespace tusur_informatika_kursovaya
         private bool lose;
         private Words words;
         private int gameType;
-
+        private int score = 0;
         
 
         public User()
         {
 
+        }
+        public void AddPoint()
+        {
+            score++;
+        }
+        public int GetScore()
+        {
+            return score;
         }
         public List<String> GetLibrary()
         {

@@ -17,7 +17,14 @@ namespace tusur_informatika_kursovaya
                 users.Add(AddUser());
             }
         }
-
+        public void AddPoint(int _Id)
+        {
+            users[_Id].AddPoint();
+        }
+        public int GetScore(int _Id)
+        {
+            return users[_Id-1].GetScore();
+        }
         public List<String> GetLibrary()
         {
             return users[0].GetLibrary();

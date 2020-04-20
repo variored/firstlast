@@ -149,8 +149,8 @@ namespace tusur_informatika_kursovaya
         }
         private void UpdateCounters()
         {
-            labelUser1Counter.Text = game.GetCount(1).ToString();
-            labelUser2Counter.Text = game.GetCount(2).ToString();
+            labelUser1Counter.Text = game.GetScore(1).ToString();
+            labelUser2Counter.Text = game.GetScore(2).ToString();
 
         }
         private void UpdateIWalkLabel()
@@ -170,6 +170,7 @@ namespace tusur_informatika_kursovaya
             Form5 formWinner = new Form5();
             formWinner.SetLoser(_Id);
             formWinner.Show();
+            game.AddPoint(_Id);
         }
         private void ShowWordExists(String _word)
         {
