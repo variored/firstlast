@@ -43,7 +43,7 @@ namespace tusur_informatika_kursovaya
 
             if (!game.IsRealWord(textBoxNewWord.Text.ToString().ToLower()))
             {
-                MessageBox.Show("unreal word: " + textBoxNewWord.Text.ToString().ToLower(), "unreal word: " + textBoxNewWord.Text.ToString().ToLower());
+                MessageBox.Show("Вы ввели не существующее слово: " + textBoxNewWord.Text.ToString().ToLower(), "СЛОВО НЕ СУЩЕСТВУЕТ");
             }
             else
             {
@@ -69,9 +69,7 @@ namespace tusur_informatika_kursovaya
                 
                 if (lastWord == "lose")
                 {
-                    game.SetGiveUp(2);
-                    UpdateWindowInfo();
-                    StartNewGame();
+                    ComputerGiveUp();
                 }
                 else
                 {
@@ -81,9 +79,15 @@ namespace tusur_informatika_kursovaya
                 
             }
         }
+        private void ComputerGiveUp()
+        {
+            game.SetGiveUp(2);
+            UpdateWindowInfo();
+            StartNewGame();
+        }
         private void ShowIncorrectLetter()
         {
-            MessageBox.Show("last letter must be: " + game.GetLastLetter().ToString().ToUpper(), "ERROR");
+            MessageBox.Show("Слово должно начинаться на букву: " + game.GetLastLetter().ToString().ToUpper(), "ОШИБКА");
         }
         private void buttonStartNewGame_Click(object sender, EventArgs e)
         {
@@ -136,11 +140,11 @@ namespace tusur_informatika_kursovaya
         {
             if (game.CheckLoser() == 1)
             {
-                ShowLoser(1);
+                ShowWinner(1);
             }
             else if (game.CheckLoser() == 2)
             {
-                ShowLoser(2);
+                ShowWinner(2);
             }
         }
         private void UpdateCounters()
@@ -161,13 +165,15 @@ namespace tusur_informatika_kursovaya
                 labelIWalk1.Text = "";
             }
         }
-        private void ShowLoser(int _Id)
+        private void ShowWinner(int _Id)
         {
-            MessageBox.Show("loser: " + _Id, "loser: " + _Id);
+            Form5 formWinner = new Form5();
+            formWinner.SetLoser(_Id);
+            formWinner.Show();
         }
         private void ShowWordExists(String _word)
         {
-            MessageBox.Show("wordExists: " + _word, "word exists: " + _word);
+            MessageBox.Show("Слово уже названо: " + _word, "ОШИБКА");
         }
         private void StartNewGame()
         {
