@@ -6,7 +6,6 @@ namespace tusur_informatika_kursovaya
     class Users
     {
         private List<User> users = new List<User>();
-        private int wordsCount;
 
         public Users()
         {

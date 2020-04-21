@@ -5,7 +5,6 @@ namespace tusur_informatika_kursovaya
     class Game
     {
         private Users users = new Users();
-        private int gameType;
         private List<String> allWords = new List<String>();
         private List<String> remainingWords = new List<String>();
         private int currentPlayer;
@@ -13,10 +12,6 @@ namespace tusur_informatika_kursovaya
         public Game()
         {
             SetCurrentPlayer(1);
-        }
-        public int GetCount(int _Id)
-        {
-            return users.GetCount(_Id);
         }
         public bool AddWord(String _word)
         {
@@ -47,14 +42,6 @@ namespace tusur_informatika_kursovaya
         {
 
             remainingWords = users.GetLibrary();
-        }
-        public String[] GetWords(int _Id)
-        {
-            return users.GetWords(_Id);
-        }
-        public int GetTotalSum()
-        {
-            return users.GetTotalSum();
         }
         public bool IsRealWord(string _word)
         {
