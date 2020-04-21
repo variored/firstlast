@@ -28,19 +28,6 @@ namespace tusur_informatika_kursovaya
         {
             return words.GetAllWords();
         }
-        public String[] GetWordsList()
-        {
-            String[] wordsArray = new String[hasWords.Count-1];
-            for(int i = 0; i < hasWords.Count-1; i++)
-            {
-                wordsArray[i] = hasWords[i];
-            }
-            return wordsArray;
-        }
-        public int GetCount()
-        {
-            return hasWords.Count;
-        }
         public void GiveUp()
         {
             lose = true;
