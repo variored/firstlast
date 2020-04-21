@@ -1,5 +1,6 @@
 ﻿
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace tusur_informatika_kursovaya
 {
@@ -8,6 +9,11 @@ namespace tusur_informatika_kursovaya
         public Form3()
         {
             InitializeComponent();
+        }
+
+        private void labelWebSite_Click(object sender, System.EventArgs e)
+        {
+            Process.Start(labelWebSite.Text);
         }
     }
 }

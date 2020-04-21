@@ -30,7 +30,9 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.labelWebSite = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,7 +54,9 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.labelWebSite);
             this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label3);
@@ -76,6 +80,19 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "(С)2020-2020 FirstLast";
             // 
+            // labelWebSite
+            // 
+            this.labelWebSite.AutoSize = true;
+            this.labelWebSite.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelWebSite.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelWebSite.ForeColor = System.Drawing.Color.Blue;
+            this.labelWebSite.Location = new System.Drawing.Point(307, 92);
+            this.labelWebSite.Name = "labelWebSite";
+            this.labelWebSite.Size = new System.Drawing.Size(124, 13);
+            this.labelWebSite.TabIndex = 2;
+            this.labelWebSite.Text = "https://variored.github.io";
+            this.labelWebSite.Click += new System.EventHandler(this.labelWebSite_Click);
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -86,6 +103,17 @@
             this.label8.Size = new System.Drawing.Size(31, 13);
             this.label8.TabIndex = 2;
             this.label8.Text = "1.0.0";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label9.Location = new System.Drawing.Point(223, 92);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(39, 13);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Сайт:";
             // 
             // label4
             // 
@@ -252,5 +280,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelWebSite;
+        private System.Windows.Forms.Label label9;
     }
 }
