@@ -187,7 +187,8 @@
             this.MaximumSize = new System.Drawing.Size(840, 99999);
             this.MinimumSize = new System.Drawing.Size(425, 39);
             this.Name = "Form4";
-            this.Text = "FirstLast | Library";
+            this.ShowIcon = false;
+            this.Text = "Словарь";
             this.panelTotal.ResumeLayout(false);
             this.panelTitle.ResumeLayout(false);
             this.panelTopLeft.ResumeLayout(false);
