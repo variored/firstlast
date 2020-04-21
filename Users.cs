@@ -27,17 +27,10 @@ namespace tusur_informatika_kursovaya
         {
             return users[0].GetLibrary();
         }
-        public int GetCount(int _Id)
-        {
-            return users[_Id - 1].GetCount();
-        }
+
         public void AddWord(String _word, int _Id)
         {
             users[_Id - 1].AddWord(_word);
-        }
-        public String[] GetWords(int _Id)
-        {
-            return users[_Id - 1].GetWordsList();
         }
         public void SetGiveUp(int _Id)
         {
@@ -55,10 +48,7 @@ namespace tusur_informatika_kursovaya
             }
             return 0;
         }
-        public int GetTotalSum()
-        {
-            return users[0].GetCount() + users[1].GetCount();
-        }
+
         public void SetGameType(int _gameType)
         {
             users[0].SetGameType(_gameType);
