@@ -5,6 +5,7 @@ namespace tusur_informatika_kursovaya
 {
     class User
     {
+        private bool isBot;
         private List<String> hasWords = new List<String>();
         private bool lose;
         private Words words;
