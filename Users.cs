@@ -39,13 +39,13 @@ namespace tusur_informatika_kursovaya
         {
             if (users[0].IsLoser())
             {
-                return 1;
+                return 0;
             }
             if (users[1].IsLoser())
             {
-                return 2;
+                return 1;
             }
-            return 0;
+            return -1;
         }
 
         public void SetGameType(int _gameType)

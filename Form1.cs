@@ -114,7 +114,7 @@ namespace tusur_informatika_kursovaya
             
             textBoxNewWord.Text = "";
 
-            if (game.CheckLoser() == 0)
+            if (game.CheckLoser() == -1)
             {
                 UpdateCounters();
                 UpdateIWalkLabel();
@@ -137,11 +137,11 @@ namespace tusur_informatika_kursovaya
         {
             if (game.CheckLoser() == 1)
             {
-                ShowWinner(1);
+                ShowWinner(0);
             }
-            else if (game.CheckLoser() == 2)
+            else if (game.CheckLoser() == 0)
             {
-                ShowWinner(2);
+                ShowWinner(1);
             }
         }
         private void UpdateCounters()
